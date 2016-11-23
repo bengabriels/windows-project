@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HoGentApp.models.Adres">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAIIAAAAAAA=</HashCode>
+      <FileName>models\Adres.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoGentApp.models.Article">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\Article.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoGentApp.models.Campus" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\Campus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.278" Collapsed="true" />
+  </Class>
+  <Class Name="HoGentApp.models.Education" BaseTypeListCollapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\Education.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HoGentApp.models.Event">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACEAAIAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>models\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HoGentApp.models.Student">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEAAACAAAAAAAAAAQAAAAAgAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="HoGentApp.models.ArticleTarget">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\ArticleTarget.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
