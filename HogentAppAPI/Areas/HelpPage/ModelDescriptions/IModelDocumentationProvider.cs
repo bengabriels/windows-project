@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace HogentAppAPI.Areas.HelpPage.ModelDescriptions
+namespace HogentAppApi.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace HogentAppAPI.Areas.HelpPage.ModelDescriptions
+namespace HogentAppApi.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

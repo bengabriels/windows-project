@@ -4,9 +4,9 @@ using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(HogentAppAPI.Startup))]
+[assembly: OwinStartup(typeof(HogentAppApi.Startup))]
 
-namespace HogentAppAPI
+namespace HogentAppApi
 {
     public partial class Startup
     {

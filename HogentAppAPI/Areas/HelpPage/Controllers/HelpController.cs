@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using HogentAppAPI.Areas.HelpPage.ModelDescriptions;
-using HogentAppAPI.Areas.HelpPage.Models;
+using HogentAppApi.Areas.HelpPage.ModelDescriptions;
+using HogentAppApi.Areas.HelpPage.Models;
 
-namespace HogentAppAPI.Areas.HelpPage.Controllers
+namespace HogentAppApi.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

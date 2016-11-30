@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HogentAppAPI")]
+[assembly: AssemblyTitle("HogentAppApi")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HogentAppAPI")]
+[assembly: AssemblyProduct("HogentAppApi")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("78609aca-7691-452e-ba59-87ac8f53574d")]
+[assembly: Guid("0064455e-4100-491f-87f6-384b50efa186")]
 
 // Version information for an assembly consists of the following four values:
 //

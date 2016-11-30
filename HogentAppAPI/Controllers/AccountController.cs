@@ -13,11 +13,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using HogentAppAPI.Models;
-using HogentAppAPI.Providers;
-using HogentAppAPI.Results;
+using HogentAppApi.Models;
+using HogentAppApi.Providers;
+using HogentAppApi.Results;
 
-namespace HogentAppAPI.Controllers
+namespace HogentAppApi.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

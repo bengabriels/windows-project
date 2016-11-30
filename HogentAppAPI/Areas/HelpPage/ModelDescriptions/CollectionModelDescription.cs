@@ -1,4 +1,4 @@
-namespace HogentAppAPI.Areas.HelpPage.ModelDescriptions
+namespace HogentAppApi.Areas.HelpPage.ModelDescriptions
 {
     public class CollectionModelDescription : ModelDescription
     {

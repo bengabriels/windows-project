@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HogentAppAPI.Models
+namespace HogentAppApi.Models
 {
     // Models returned by AccountController actions.
 

@@ -5,9 +5,9 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace HogentAppAPI.Controllers
+namespace HogentAppApi.Controllers
 {
-    [Authorize]
+    /*[Authorize]*/
     public class ValuesController : ApiController
     {
         // GET api/values

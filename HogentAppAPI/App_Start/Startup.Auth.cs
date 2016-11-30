@@ -8,10 +8,10 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using HogentAppAPI.Providers;
-using HogentAppAPI.Models;
+using HogentAppApi.Providers;
+using HogentAppApi.Models;
 
-namespace HogentAppAPI
+namespace HogentAppApi
 {
     public partial class Startup
     {

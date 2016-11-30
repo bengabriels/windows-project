@@ -1,4 +1,5 @@
-﻿namespace HogentAppAPI.Models
+﻿
+namespace HogentAppAPI.Models
 {
     public class Education : ArticleTarget
     {

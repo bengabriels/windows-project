@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace HogentAppAPI.Areas.HelpPage.ModelDescriptions
+namespace HogentAppApi.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterDescription
     {

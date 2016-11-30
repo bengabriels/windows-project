@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace HogentAppAPI.Areas.HelpPage
+namespace HogentAppApi.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

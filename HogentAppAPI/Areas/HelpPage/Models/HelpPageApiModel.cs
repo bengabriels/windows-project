@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using HogentAppAPI.Areas.HelpPage.ModelDescriptions;
+using HogentAppApi.Areas.HelpPage.ModelDescriptions;
 
-namespace HogentAppAPI.Areas.HelpPage.Models
+namespace HogentAppApi.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

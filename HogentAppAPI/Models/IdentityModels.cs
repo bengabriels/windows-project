@@ -4,7 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 
-namespace HogentAppAPI.Models
+namespace HogentAppApi.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -29,5 +29,9 @@ namespace HogentAppAPI.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<HogentAppAPI.Models.Education> Educations { get; set; }
+
+        public System.Data.Entity.DbSet<HogentAppAPI.Models.Campus> Campus { get; set; }
     }
 }

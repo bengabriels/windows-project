@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace HogentAppAPI.Areas.HelpPage.ModelDescriptions
+namespace HogentAppApi.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using HogentAppAPI.Areas.HelpPage.ModelDescriptions;
-using HogentAppAPI.Areas.HelpPage.Models;
+using HogentAppApi.Areas.HelpPage.ModelDescriptions;
+using HogentAppApi.Areas.HelpPage.Models;
 
-namespace HogentAppAPI.Areas.HelpPage
+namespace HogentAppApi.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

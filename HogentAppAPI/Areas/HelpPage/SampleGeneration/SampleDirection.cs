@@ -1,4 +1,4 @@
-namespace HogentAppAPI.Areas.HelpPage
+namespace HogentAppApi.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response
