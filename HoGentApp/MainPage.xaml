@@ -76,19 +76,19 @@
             </Grid.RowDefinitions>
 
             <!--Content and style of the grids-->
-            <Grid x:Name="FirstGrid" Grid.Column="0" Grid.Row="0" Background="#0078d7" CornerRadius="5"  Tapped="FirstGrid_OnTapped">
+            <Grid x:Name="FirstGrid" Grid.Column="0" Grid.Row="0" Background="DeepSkyBlue" CornerRadius="5"  Tapped="FirstGrid_OnTapped">
                 <TextBlock Text="STEL JEZELF VOOR" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="bold"/>
             </Grid>
-            <Grid x:Name="SecondGrid" Grid.Column="1" Grid.Row="0" Background="#0078d7" CornerRadius="5" Tapped="SecondGrid_OnTapped">
+            <Grid x:Name="SecondGrid" Grid.Column="1" Grid.Row="0" Background="DeepSkyBlue" CornerRadius="5" Tapped="SecondGrid_OnTapped">
                 <TextBlock Text="ONTDEK ONZE OPLEIDINGEN" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="bold"/>
             </Grid>
-            <Grid x:Name="ThirdGrid" Grid.Column="0" Grid.Row="1" Background="#0078d7" CornerRadius="5" Tapped="ThirdGrid_OnTapped">
+            <Grid x:Name="ThirdGrid" Grid.Column="0" Grid.Row="1" Background="DeepSkyBlue" CornerRadius="5" Tapped="ThirdGrid_OnTapped">
                 <TextBlock Text="ONZE CAMPUSSEN" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="bold"/>
             </Grid>
-            <Grid x:Name="FourthGrid" Grid.Column="1" Grid.Row="1" Background="#0078d7" CornerRadius="5" Tapped="FourthGrid_OnTapped">
+            <Grid x:Name="FourthGrid" Grid.Column="1" Grid.Row="1" Background="DeepSkyBlue" CornerRadius="5" Tapped="FourthGrid_OnTapped">
                 <TextBlock Text="NIEUWS FEEDS" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="bold"/>
             </Grid>
-            <Grid x:Name="FifthGrid" Grid.Column="0" Grid.Row="2" Background="#0078d7" CornerRadius="5" Tapped="FifthGrid_OnTapped">
+            <Grid x:Name="FifthGrid" Grid.Column="0" Grid.Row="2" Background="DeepSkyBlue" CornerRadius="5" Tapped="FifthGrid_OnTapped">
                 <TextBlock Text="TOEKOMSTIGE ACTIVITEITEN" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="bold"/>
             </Grid>
 

@@ -92,10 +92,7 @@ namespace HoGentApp
 
         private void ToggleMenuRadioButton_OnClick(object sender, RoutedEventArgs e)
         {
-            if (!this.SplitView.IsPaneOpen)
-            {
-                this.SplitView.IsPaneOpen = true;
-            }
+            this.SplitView.IsPaneOpen = !this.SplitView.IsPaneOpen;
         }
     }
 }

@@ -48,7 +48,9 @@ namespace HoGentApp
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-            Frame rootFrame = Window.Current.Content as Frame;
+            //Frame rootFrame = Window.Current.Content as Frame;
+            shell = Window.Current.Content as Shell;
+            Frame rootFrame = null;
 
             if (shell == null)
             {
@@ -63,7 +65,7 @@ namespace HoGentApp
                     rootFrame = new Frame();
 
                     rootFrame.NavigationFailed += OnNavigationFailed;
-                    rootFrame.Navigated += RootFrame_Navigated;
+                   // rootFrame.Navigated += RootFrame_Navigated;
 
                     if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                     {
@@ -73,16 +75,18 @@ namespace HoGentApp
                     // Place the frame in the current Window
                     Window.Current.Content = shell;
                 }
+               
+                /*
                 // Register a handler for BackRequested events and set the  
                 // visibility of the Back button  
                 SystemNavigationManager.GetForCurrentView().BackRequested += OnBackRequested;
-
                 SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
                     rootFrame.CanGoBack ?
                     AppViewBackButtonVisibility.Visible :
                     AppViewBackButtonVisibility.Collapsed;
+                */
             }
-
+            
             if (e.PrelaunchActivated == false)
             {
                 if (rootFrame.Content == null)
@@ -120,6 +124,7 @@ namespace HoGentApp
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+        /*
         private void RootFrame_Navigated(object sender, NavigationEventArgs e)
         {
             // Each time a navigation event occurs, update the Back button's visibility  
@@ -139,6 +144,7 @@ namespace HoGentApp
                 rootFrame.GoBack();
             }
         }
+        */
 
     }
 }

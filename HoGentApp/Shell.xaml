@@ -1,4 +1,5 @@
-﻿<Page x:Class="HoGentApp.Shell"
+﻿<!--Pagina die splitview bevat-->
+    <Page x:Class="HoGentApp.Shell"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:HoGentApp"
@@ -72,16 +73,16 @@
     </Page.Resources>
     <!--Pagina die de splitview bevat-->
     <SplitView x:Name="SplitView" Background="White" OpenPaneLength="240" CompactPaneLength="48"  
-        DisplayMode="CompactOverlay" IsPaneOpen="False" PaneBackground="DodgerBlue" Content="{Binding}">
+        DisplayMode="CompactOverlay" IsPaneOpen="False" PaneBackground="#1c1c1c" Content="{Binding}">
         <SplitView.Pane>
             <StackPanel x:Name="SplitViewPanePanel">
-                <RadioButton x:Name="BackRadioButton" Click="BackRadioButton_Click" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE112;" Background="DeepSkyBlue" Content="Back" GroupName="Back"/>
-                <RadioButton x:Name="ToggleMenuRadioButton" Click="ToggleMenuRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE700;" Content="Campussen" GroupName="Navigation"/>
-                <RadioButton x:Name="HomeRadioButton" Click="HomeRadioButton_Click" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE80F;" Content="Home Pagina" GroupName="Navigation"/>
-                <RadioButton x:Name="CampussenRadioButton" Click="CampussenRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE700;" Content="Campussen" GroupName="Navigation"/>
-                <RadioButton x:Name="VoorstellingRadioButton" Click="VoorstellingRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE125;" Content="Vertel ons wie je bent" GroupName="Navigation"/>
-                <RadioButton x:Name="ToekomstigeActiviteitenRadioButton" Click="ToekomstigeActiviteitenRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE125;" Content="Toekomstige Activiteiten" GroupName="Navigation"/>
-                <RadioButton x:Name="NieuwsFeedsRadioButton" Click="NieuwsFeedsRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE125;" Content="Nieuws Feeds" GroupName="Navigation"/>
+                <RadioButton x:Name="BackRadioButton" Click="BackRadioButton_Click" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE830;" Foreground="DarkGray" Content="Vorige" GroupName="Back"/>
+                <RadioButton x:Name="ToggleMenuRadioButton" Click="ToggleMenuRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Background="Black" Foreground="DarkGray" Tag="&#xE700;" Content="" GroupName="Navigation"/>
+                <RadioButton x:Name="HomeRadioButton" Click="HomeRadioButton_Click" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE80F;" Foreground="DarkGray" Content="Home Pagina" GroupName="Navigation"/>
+                <RadioButton x:Name="VoorstellingRadioButton" Click="VoorstellingRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE8FA;" Foreground="DarkGray" Content="Vertel ons wie je bent" GroupName="Navigation"/>
+                <RadioButton x:Name="CampussenRadioButton" Click="CampussenRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE72D;" Foreground="DarkGray" Content="Campussen" GroupName="Navigation"/>
+                <RadioButton x:Name="ToekomstigeActiviteitenRadioButton" Click="ToekomstigeActiviteitenRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE8BF;" Foreground="DarkGray" Content="Toekomstige Activiteiten" GroupName="Navigation"/>
+                <RadioButton x:Name="NieuwsFeedsRadioButton" Click="NieuwsFeedsRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE8BD;" Foreground="DarkGray" Content="Nieuws Feeds" GroupName="Navigation"/>
             </StackPanel>
         </SplitView.Pane>
     </SplitView>
