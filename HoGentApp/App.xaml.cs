@@ -23,6 +23,8 @@ namespace HoGentApp
     /// </summary>
     sealed partial class App : Application
     {
+        private Shell shell;
+
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -48,24 +50,29 @@ namespace HoGentApp
 #endif
             Frame rootFrame = Window.Current.Content as Frame;
 
-            // Do not repeat app initialization when the Window already has content,
-            // just ensure that the window is active
-            if (rootFrame == null)
+            if (shell == null)
             {
-                // Create a Frame to act as the navigation context and navigate to the first page
-                rootFrame = new Frame();
+                shell = new Shell();
 
-                rootFrame.NavigationFailed += OnNavigationFailed;
-                rootFrame.Navigated += RootFrame_Navigated;
 
-                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                // Do not repeat app initialization when the Window already has content,
+                // just ensure that the window is active
+                if (rootFrame == null)
                 {
-                    //TODO: Load state from previously suspended application
+                    // Create a Frame to act as the navigation context and navigate to the first page
+                    rootFrame = new Frame();
+
+                    rootFrame.NavigationFailed += OnNavigationFailed;
+                    rootFrame.Navigated += RootFrame_Navigated;
+
+                    if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                    {
+                        //TODO: Load state from previously suspended application
+                    }
+                    shell.DataContext = rootFrame;
+                    // Place the frame in the current Window
+                    Window.Current.Content = shell;
                 }
-
-                // Place the frame in the current Window
-                Window.Current.Content = rootFrame;
-
                 // Register a handler for BackRequested events and set the  
                 // visibility of the Back button  
                 SystemNavigationManager.GetForCurrentView().BackRequested += OnBackRequested;

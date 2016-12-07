@@ -132,25 +132,27 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[8];
+            _typeNameTable = new string[9];
             _typeNameTable[0] = "HoGentApp.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "HoGentApp.Views.Campussen";
-            _typeNameTable[4] = "HoGentApp.Views.NieuwsFeeds";
-            _typeNameTable[5] = "HoGentApp.Views.Opleidingen";
-            _typeNameTable[6] = "HoGentApp.Views.ToekomstigeActiviteiten";
-            _typeNameTable[7] = "HoGentApp.Views.Voorstelling";
+            _typeNameTable[3] = "HoGentApp.Shell";
+            _typeNameTable[4] = "HoGentApp.Views.Campussen";
+            _typeNameTable[5] = "HoGentApp.Views.NieuwsFeeds";
+            _typeNameTable[6] = "HoGentApp.Views.Opleidingen";
+            _typeNameTable[7] = "HoGentApp.Views.ToekomstigeActiviteiten";
+            _typeNameTable[8] = "HoGentApp.Views.Voorstelling";
 
-            _typeTable = new global::System.Type[8];
+            _typeTable = new global::System.Type[9];
             _typeTable[0] = typeof(global::HoGentApp.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::HoGentApp.Views.Campussen);
-            _typeTable[4] = typeof(global::HoGentApp.Views.NieuwsFeeds);
-            _typeTable[5] = typeof(global::HoGentApp.Views.Opleidingen);
-            _typeTable[6] = typeof(global::HoGentApp.Views.ToekomstigeActiviteiten);
-            _typeTable[7] = typeof(global::HoGentApp.Views.Voorstelling);
+            _typeTable[3] = typeof(global::HoGentApp.Shell);
+            _typeTable[4] = typeof(global::HoGentApp.Views.Campussen);
+            _typeTable[5] = typeof(global::HoGentApp.Views.NieuwsFeeds);
+            _typeTable[6] = typeof(global::HoGentApp.Views.Opleidingen);
+            _typeTable[7] = typeof(global::HoGentApp.Views.ToekomstigeActiviteiten);
+            _typeTable[8] = typeof(global::HoGentApp.Views.Voorstelling);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -186,11 +188,12 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::HoGentApp.MainPage(); }
-        private object Activate_3_Campussen() { return new global::HoGentApp.Views.Campussen(); }
-        private object Activate_4_NieuwsFeeds() { return new global::HoGentApp.Views.NieuwsFeeds(); }
-        private object Activate_5_Opleidingen() { return new global::HoGentApp.Views.Opleidingen(); }
-        private object Activate_6_ToekomstigeActiviteiten() { return new global::HoGentApp.Views.ToekomstigeActiviteiten(); }
-        private object Activate_7_Voorstelling() { return new global::HoGentApp.Views.Voorstelling(); }
+        private object Activate_3_Shell() { return new global::HoGentApp.Shell(); }
+        private object Activate_4_Campussen() { return new global::HoGentApp.Views.Campussen(); }
+        private object Activate_5_NieuwsFeeds() { return new global::HoGentApp.Views.NieuwsFeeds(); }
+        private object Activate_6_Opleidingen() { return new global::HoGentApp.Views.Opleidingen(); }
+        private object Activate_7_ToekomstigeActiviteiten() { return new global::HoGentApp.Views.ToekomstigeActiviteiten(); }
+        private object Activate_8_Voorstelling() { return new global::HoGentApp.Views.Voorstelling(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -217,37 +220,44 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
                 xamlType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  HoGentApp.Views.Campussen
+            case 3:   //  HoGentApp.Shell
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Campussen;
+                userType.Activator = Activate_3_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  HoGentApp.Views.NieuwsFeeds
+            case 4:   //  HoGentApp.Views.Campussen
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_NieuwsFeeds;
+                userType.Activator = Activate_4_Campussen;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  HoGentApp.Views.Opleidingen
+            case 5:   //  HoGentApp.Views.NieuwsFeeds
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Opleidingen;
+                userType.Activator = Activate_5_NieuwsFeeds;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  HoGentApp.Views.ToekomstigeActiviteiten
+            case 6:   //  HoGentApp.Views.Opleidingen
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_ToekomstigeActiviteiten;
+                userType.Activator = Activate_6_Opleidingen;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  HoGentApp.Views.Voorstelling
+            case 7:   //  HoGentApp.Views.ToekomstigeActiviteiten
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_Voorstelling;
+                userType.Activator = Activate_7_ToekomstigeActiviteiten;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  HoGentApp.Views.Voorstelling
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_Voorstelling;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
