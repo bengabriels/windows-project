@@ -28,6 +28,8 @@ namespace HoGentApp.Views
             this.InitializeComponent();
         }
 
+       
+
         private void ImageToegepasteInformatica_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Views.OpleidingPaginas.ToegepasteInformatica));

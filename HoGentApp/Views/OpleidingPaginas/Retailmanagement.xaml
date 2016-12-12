@@ -7,7 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <ScrollViewer>
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="15 0 15 0">
+            <TextBlock Text="Retailmanagement" FontSize="20" FontWeight="bold" Padding="0 10 0 10"></TextBlock>
+            <RichTextBlock TextAlignment="Justify">
+                <Paragraph>
+                    <Italic>De opleiding tot bachelor in het retailmanagement bereidt jou voor op de job van strategisch manager in de detailhandel. Het is een veelzijdige opleiding waarin je kennismaakt met alle aspecten van het leiden van een winkel: zowel de strategie, het commerciële, het financiële, het personeelsaspect, de communicatie en het juridische. Maar het is vooral ook een opleiding waarbij je al doende leert. Want de opleiding wordt enkel aangeboden in de vorm van duaal leren.</Italic> 
+                    <LineBreak/>
+                    <LineBreak/>Duaal leren betekent dat je om beurten drie weken aan de hogeschool studeert en daarna drie weken op de werkvloer gaat leren - onder begeleiding van een docent-begeleider en van een bedrijfscoach. Er is een hechte samenwerking tussen de coach in het winkelbedrijf en de lesgevers van de HoGent. 
+                    Het volledige programma is uitgewerkt in een samenwerking tussen de HoGent en de retailsector. De opleiding wordt gesteund door Comeos, de organisatie van de Belgische handel en diensten. We werken samen met een dertigtal bedrijven uit de meest diverse sectoren, gespreid over het hele Vlaamse land.
+                    De opleiding werd na een grondig onderzoek in opdracht van de Vlaamse overheid erkend door de minister van Onderwijs, en leidt tot het diploma van (professionele) bachelor. 
+                    We richten ons speciaal naar enthousiaste en ondernemende studenten met een hart voor het winkelbedrijf.
+                </Paragraph>
+            </RichTextBlock>
+            <TextBlock FontSize="13" FontWeight="bold" Padding="0 10 0 2">Intakegesprek
+            </TextBlock>
+            <RichTextBlock TextAlignment="Justify">
+                <Paragraph>
+                    Heb je interesse om volgend academiejaar te starten met Retailmanagement?
+                    Stuur dan een e-mail naar retail@hogent.be. Wij brengen jou in de loop van de maand februari op de hoogte van de data waarop de intakegesprekken gepland zijn.
+                    <LineBreak/>
+                    <LineBreak/>
+                    Tot binnenkort!
+                </Paragraph>
+            </RichTextBlock>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

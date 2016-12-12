@@ -6,8 +6,49 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <ScrollViewer>
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="15 0 15 0">
+            <TextBlock Text="Officemanagement" FontSize="20" FontWeight="bold" Padding="0 10 0 10"></TextBlock>
+            <RichTextBlock TextAlignment="Justify">
+                <Paragraph>
+                 Je bent een doener en je houdt van uitdagingen. In een team ben jij diegene die organiseert en coördineert. Je weet van aanpakken en bent een punctuele multitasker. Voor jou moeten de zaken vooruitgaan, goed getimed en gepland. Talen zijn volledig je ding en je communiceert graag. Je blik is internationaal, je aanpak no-nonsense.
+                 De opleiding office management bereidt je perfect voor op een boeiende job. Dit gebeurt op een veelzijdige manier om tegemoet te komen aan het diverse pakket van taken maar met een
+                 gerichte focus op drie pijlers:
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>Talenkennis</Bold>
+                    <LineBreak/>
+                    Nederlands, Frans, Engels en mogelijk een vierde taal Spaans of Duits. Je wordt de meertalige medewerker die in elk bedrijf en elke organisatie onmisbaar is.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>Communicatievaardigheden and<LineBreak/>organisational skills</Bold>
+                    <LineBreak/>
+                    efficiënt researchen, prioriteiten detecteren, oplossingsgericht handelen, correct communiceren, overtuigen en onderhandelen, professioneel rapporteren en impactvol presenteren. Je wordt de multifunctionele duizendpoot die de waaier aan taken perfect onder controle heeft.
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>ICT</Bold>
+                    <LineBreak/>
+                    je wordt professionele expert in de meest gangbare softwarepakketten.
+                </Paragraph>
+            </RichTextBlock>
+            <TextBlock FontSize="13" FontWeight="bold" Padding="0 10 0 2">Talentmanagement:
+                Geen theorie zonder praktijk
+            </TextBlock>
+            <RichTextBlock TextAlignment="Justify">
+                <Paragraph>
+                    De opleiding staat permanent in interactie met de beroepspraktijk. Vanaf het eerste jaar duik je al in de realiteit van het werkveld; onder meer via allerlei boeiende doestages, opdrachten, gastsprekers en projecten.
+                    Natuurlijk kan je daarbij rekenen op professionele ondersteuning: onze lectoren zijn allemaal vakspecialisten die je met plezier coachen en hun expertise graag met jou delen.
+                    HoGent-studenten worden opgeleid tot wereldburgers; vandaar dat je tijdens je studie een pak internationale en interculturele competenties zal verwerven. Buitenlandse gastsprekers, een internationale week, studeren of stage lopen in het buitenland als je wil, uitwisselingen, uitstappen en vele andere toffe activiteiten zullen je blik op de wereld enorm verruimen.
+                </Paragraph>
+            </RichTextBlock>
+            <TextBlock FontSize="13" FontWeight="bold" Padding="0 10 0 2">
+                Ga meteen voor wat je echt boeit
+            </TextBlock>
+            <RichTextBlock>
+                <Paragraph>
+                    De opleiding office management biedt drie afstudeerrichtingen aan. Elke afstudeerrichting legt haar eigen klemtonen en leert je specifieke vaardigheden. Meteen bij de start van je opleiding kies je de afstudeerrichting die jou het meest ligt.
+                </Paragraph>
+            </RichTextBlock>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

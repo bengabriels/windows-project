@@ -6,8 +6,51 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <ScrollViewer>
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="15 0 15 0">
+            <TextBlock Text="Bedrijfsmanagement" FontSize="20" FontWeight="bold" Padding="0 10 0 10"></TextBlock>
+            <RichTextBlock TextAlignment="Justify">
+                <Paragraph>
+                    De opleiding bachelor in het bedrijfsmanagement duurt drie jaar. 
+                    Je kiest vanaf het eerste jaar je afstudeerrichting.
+                    Vanaf de eerste les kan je gaan voor wat je echt boeit en zie je al onmiddellijk de link met het beroepsleven.
+                </Paragraph>
+            </RichTextBlock>
+            <TextBlock FontSize="13" FontWeight="bold" Padding="0 10 0 2">Talentmanagement:
+                je talent optimaal benutten
+            </TextBlock>
+            <RichTextBlock TextAlignment="Justify">
+                <Paragraph>
+                    De opleiding bedrijfsmanagement wil je actief begeleiden in je persoonlijke ontwikkeling en in de ontwikkeling van je competenties en talenten. Je krijgt een coach die met jou 1-to-1 je volledige studietraject begeleidt en je met raad en daad bijstaat. In het eerste jaar ligt de focus vooral op jezelf leren kennen als student en op je studieproces.
+                    In het tweede en het derde jaar ligt de focus op je persoonlijke ontwikkeling en op je beroepskeuze. Je coach bespreekt ook samen met jou de ideale stageplaats als voorbereiding op de job die je graag wil. Je leert ook meteen om een goed CV op te stellen dat vertrekt van je eigen sterktes. Heel belangrijk is dat jij altijd de centrale figuur bent in de coachingsessies. 
+                    Jij bent altijd diegene die voor jezelf onderzoekt wat je kan en wat je wil. En je onderneemt ook eigen acties om jezelf bij te sturen naar een optimale slaagkans.
+                </Paragraph>
+            </RichTextBlock>
+            <TextBlock FontSize="13" FontWeight="bold" Padding="0 10 0 2">
+                De beroepsrealiteit:<LineBreak/>duik in de praktijk vanaf de eerste les
+            </TextBlock>
+            <RichTextBlock>
+                <Paragraph>
+                    Binnen de opleiding is er ruime aandacht voor wat wij noemen ‘een authentieke leeromgeving’. Je zal vanaf het eerste jaar in verschillende vakken en projecten boeiende opdrachten mogen uitwerken die rechtstreeks verband houden met de beroepspraktijk en het werkveld. En natuurlijk kan je daarbij rekenen op professionele support door onze docenten die altijd experten zijn. Zo leer je niet alleen de concrete dagelijkse beroepspraktijk beter kennen. Je scherpt ook je communicatieve en sociale vaardigheden aan. Goed kunnen spreken en presenteren, je standpunt duidelijk maken in je team en in het bedrijfsleven, kunnen onderhandelen en overtuigen….Het zijn cruciale skills die je voorbereiden op de beste jobs en je een voorsprong geven op de arbeidsmarkt.
+                </Paragraph>
+            </RichTextBlock>
+            <TextBlock FontSize="13" FontWeight="bold" Padding="0 10 0 2">
+                Onderzoek:<LineBreak/>efficiënt je weg vinden in de informatiejungle
+            </TextBlock>
+            <RichTextBlock>
+                <Paragraph>
+                    In dit digitale tijdperk van ‘information overflow’ is het heel erg belangrijk dat je sterk staat in research: informatie snel opzoeken online/ offline, selecteren en verwerken vergt een heel specifieke training. Je leert prioriteiten zien, conclusies in een sterk rapport gieten en overtuigend presenteren.</Paragraph>
+            </RichTextBlock>
+            <TextBlock FontSize="13" FontWeight="bold" Padding="0 10 0 2">
+                The World is a Village:<LineBreak/>internationale ervaringen verruimen je horizon
+            </TextBlock>
+            <RichTextBlock>
+                <Paragraph>
+                    Onze studenten moeten wereldburgers worden en dit kan alleen door ook in je opleiding de kans te krijgen om internationale en interculturele competenties te verwerven. Je zal dus letterlijk grenzen kunnen verleggen door intensief contact met niet alleen lesgevers, studenten en bedrijven van bij ons. Ook buitenlandse contacten en relaties zullen je inzichten verdiepen en verruimen. Naast gastsprekers, internationale topics in de lessen, buitenlandse studiereizen, opdrachten in samenwerking met buitenlandse studenten en organisaties enz. kan je bijvoorbeeld ook een tijdje in het buitenland gaan studeren of kiezen voor een buitenlandse stage. Gaandeweg bouw je een internationaal netwerk op en al je ervaringen ga je bundelen in je zogeheten internationaal paspoort: een verplicht opleidingsonderdeel voor alle richtingen bedrijfsmanagement. En een gouden troef voor je latere professionele carrière.
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+Wens je meer informatie? Stuur een mail naar de Academische Coördinator Internationalisering Bedrijfsmanagement: fabienne.mornie@hogent.be
+                </Paragraph>
+            </RichTextBlock>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

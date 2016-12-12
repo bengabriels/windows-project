@@ -7,7 +7,35 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <ScrollViewer>
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="15 0 15 0">
+            <TextBlock Text="Toegepaste Informatica" FontSize="20" FontWeight="bold" Padding="0 10 0 10"></TextBlock>
+            <RichTextBlock TextAlignment="Justify">
+                <Paragraph>
+                    - Heb je interesse om een spamfilter, webbrowser of webapplicatie te programmeren?
+                    <LineBreak/>
+                    <LineBreak/>
+                    - Zin om een pc samen te stellen, een firewall of netwerk op te zetten?
+                    <LineBreak/>
+                    <LineBreak/>
+                    - Gebeten om een oplossing te vinden voor elk IT-probleem?
+                    <LineBreak/>
+                    <LineBreak/>
+                    - Zin om mee te werken aan de ontwikkeling van een applicatie van start tot finish?
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Bold>Dan is de bachelor in de toegepaste informatica iets voor jou!</Bold>
+                </Paragraph>
+            </RichTextBlock>
+            <RichTextBlock TextAlignment="Justify">
+                <Paragraph>
+                    De IT’er van vandaag is veel meer dan alleen maar een technische expert. Hij of zij moet tegelijkertijd een ondernemende, communicatieve en klantgerichte teamspeler zijn. IT is namelijk geëvolueerd van een zuiver technisch verhaal naar ’IT as a service and support tool’.
+                    De moderne IT’er is dan ook vooral een ITmanager: iemand die in staat is de strategie van een bedrijf te vertalen naar ICT-oplossingen. De bacheloropleiding toegepaste informatica speelt met haar programma dan ook perfect in op wat de markt en het bedrijfsleven van vandaag exact verlangen van een IT’er. Om performant te kunnen functioneren in een all-round managementfunctie zal je dus tijdens je opleiding niet alleen vlot de nodige IT-skills leren beheersen.
+                    Ook business en ondernemerschap maken een belangrijk onderdeel uit van de training.
+                    Binnen de opleiding is er ruime aandacht voor wat wij noemen ‘een authentieke leeromgeving’. Je zal vanaf het eerste jaar in verschillende vakken en projecten boeiende opdrachten mogen uitwerken die rechtstreeks verband houden met de beroepspraktijk en het werkveld. En natuurlijk kan je daarbij rekenen op professionele support door onze docenten die altijd vakspecialisten zijn. Zo leer je niet alleen de concrete dagelijkse beroepspraktijk beter kennen, je scherpt ook je communicatieve en sociale vaardigheden aan. Goed kunnen spreken en presenteren, je standpunt duidelijk maken in je team en in het bedrijfsleven, kunnen onderhandelen en overtuigen, … het zijn cruciale skills die je voorbereiden op de beste jobs en je een voorsprong geven op de arbeidsmarkt.
+                    De internationale dimensie is sterk aanwezig in de opleiding. Onze studenten moeten wereldburgers worden en dit kan alleen door ook in je opleiding de kans te krijgen om internationale en interculturele competenties te verwerven. Buitenlandse gastsprekers, de ‘Internationale week’, eventueel studeren of stage lopen in het buitenland en uitwisselingen met anderstalige studenten zullen je kijk op de wereld verruimen.
+                </Paragraph>
+            </RichTextBlock>
+        </StackPanel>
+    </ScrollViewer>
 </Page>
