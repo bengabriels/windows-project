@@ -111,6 +111,18 @@
     <Compile Include="Views\Opleidingen.xaml.cs">
       <DependentUpon>Opleidingen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\OpleidingPaginas\Bedrijfsmanagement.xaml.cs">
+      <DependentUpon>Bedrijfsmanagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OpleidingPaginas\Officemanagement.xaml.cs">
+      <DependentUpon>Officemanagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OpleidingPaginas\Retailmanagement.xaml.cs">
+      <DependentUpon>Retailmanagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OpleidingPaginas\ToegepasteInformatica.xaml.cs">
+      <DependentUpon>ToegepasteInformatica.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ToekomstigeActiviteiten.xaml.cs">
       <DependentUpon>ToekomstigeActiviteiten.xaml</DependentUpon>
     </Compile>
@@ -125,6 +137,10 @@
     <None Include="HoGentApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Bedrijfsmanagement.jpg" />
+    <Content Include="Assets\Officemanagement.jpg" />
+    <Content Include="Assets\Retailmanagement.jpg" />
+    <Content Include="Assets\toegepasteinformatica.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -159,6 +175,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\OpleidingPaginas\Bedrijfsmanagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OpleidingPaginas\Officemanagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OpleidingPaginas\Retailmanagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OpleidingPaginas\ToegepasteInformatica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ToekomstigeActiviteiten.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -168,6 +200,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -7,7 +7,99 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox Text="Opleidingen"></TextBox>
-    </Grid>
+    <ScrollViewer>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainGrid.Margin" Value="24"/>
+                        <Setter Target="FirstGrid.Margin" Value="0 0 0 0"/>
+                        <Setter Target="SecondGrid.Margin" Value="6 0 0 0"/>
+                        <Setter Target="ThirdGrid.Margin" Value="0 6 0 0"/>
+                        <Setter Target="FourthGrid.Margin" Value="6 6 0 0"/>
+                        <Setter Target="FifthGrid.Margin" Value="0 6 0 0"/>
+                        <Setter Target="MainGrid.RowDefinitions[1].Height" Value="auto"/>
+                        <Setter Target="MainGrid.ColumnDefinitions[1].Width" Value="*"/>
+
+
+                        <Setter Target="SecondGrid.(Grid.Column)" Value="1"/>
+                        <Setter Target="SecondGrid.(Grid.Row)" Value="0"/>
+                        <Setter Target="ThirdGrid.(Grid.Column)" Value="0"/>
+                        <Setter Target="ThirdGrid.(Grid.Row)" Value="2"/>
+                        <Setter Target="FourthGrid.(Grid.Column)" Value="1"/>
+                        <Setter Target="FourthGrid.(Grid.Row)" Value="2"/>
+
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainGrid.Margin" Value="12"/>
+                        <Setter Target="FirstGrid.Margin" Value="0 12 0 12"/>
+                        <Setter Target="SecondGrid.Margin" Value="0 12 0 12"/>
+                        <Setter Target="ThirdGrid.Margin" Value="0 12 0 12"/>
+                        <Setter Target="FourthGrid.Margin" Value="0 12 0 12"/>
+               
+                        <Setter Target="MainGrid.RowDefinitions[1].Height" Value="*"/>
+                        <Setter Target="MainGrid.ColumnDefinitions[1].Width" Value="auto"/>
+                        <Setter Target="SecondGrid.(Grid.Column)" Value="0"/>
+                        <Setter Target="SecondGrid.(Grid.Row)" Value="1"/>
+                        <Setter Target="ThirdGrid.(Grid.Column)" Value="0"/>
+                        <Setter Target="ThirdGrid.(Grid.Row)" Value="2"/>
+                        <Setter Target="FourthGrid.(Grid.Column)" Value="0"/>
+                        <Setter Target="FourthGrid.(Grid.Row)" Value="3"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="MainGrid" Height="800" HorizontalAlignment="Center" VerticalAlignment="center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--Content and style of the grids-->
+
+            <Grid x:Name="FirstGrid" Grid.Column="0" Grid.Row="0" Padding="6 0 12 0">
+                <StackPanel>
+                    <TextBlock FontWeight="bold" FontSize="18">Bedrijfsmanagement</TextBlock>
+                    <TextBlock FontSize="14">Professionele Bachelor</TextBlock>
+                    <Image Source="../Assets/Bedrijfsmanagement.jpg" Stretch="None" Tapped="ImageBedrijfsManagement_Tapped"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="SecondGrid" Grid.Column="0" Grid.Row="1" Padding="6 0 12 0">
+                <StackPanel>
+                    <TextBlock FontWeight="bold" FontSize="18">Retailmanagement</TextBlock>
+                    <TextBlock FontSize="14">Professionele Bachelor</TextBlock>
+                    <Image Source="../Assets/Retailmanagement.jpg" Stretch="None" Tapped="ImageRetailManagement_Tapped"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="ThirdGrid" Grid.Column="0" Grid.Row="2" Padding="6 0 12 0">
+                <StackPanel>
+                    <TextBlock FontWeight="bold" FontSize="18">Office Management</TextBlock>
+                    <TextBlock FontSize="14">Professionele Bachelor</TextBlock>
+                    <Image Source="../Assets/Officemanagement.jpg" Stretch="None" Tapped="ImageOfficeManagement_Tapped"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="FourthGrid" Grid.Column="0" Grid.Row="3" Padding="6 0 12 0">
+                <StackPanel>
+                    <TextBlock FontWeight="bold" FontSize="18">Toegepaste Informatica</TextBlock>
+                    <TextBlock FontSize="14">Professionele Bachelor</TextBlock>
+                    <Image Source="../Assets/toegepasteinformatica.jpg" Stretch="None" Tapped="ImageToegepasteInformatica_Tapped"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
 </Page>
