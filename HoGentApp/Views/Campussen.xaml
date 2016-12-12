@@ -7,7 +7,31 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox Text="Campussen"></TextBox>
-    </Grid>
+    <ScrollViewer>
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Border Background="LightGray">
+                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25" Text="Campus Aalst"></TextBlock>
+            </Border>
+            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Bijloke"></TextBlock>
+            <Border Background="LightGray">
+                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Mercator"></TextBlock>
+            </Border>
+            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Ledeganck"></TextBlock>
+            <Border Background="LightGray">
+                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Melle"></TextBlock>
+            </Border>
+            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Grote Sikkel"></TextBlock>
+            <Border Background="LightGray">
+                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Schoonmeersen" Tapped="Schoonmeersen_tapped"></TextBlock>
+            </Border>
+            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Vesalius"></TextBlock>
+            <Border Background="LightGray">
+                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Proefhove Bottelare"></TextBlock>
+            </Border>
+            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Site Geraard de Duivelstraat"></TextBlock>
+            <Border Background="LightGray">
+                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Site Buchtenstraat"></TextBlock>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

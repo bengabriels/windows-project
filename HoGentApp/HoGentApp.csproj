@@ -102,6 +102,9 @@
     <Compile Include="Shell.xaml.cs">
       <DependentUpon>Shell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CampusPaginas\Schoonmeersen.xaml.cs">
+      <DependentUpon>Schoonmeersen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Campussen.xaml.cs">
       <DependentUpon>Campussen.xaml</DependentUpon>
     </Compile>
@@ -160,6 +163,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Shell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CampusPaginas\Schoonmeersen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

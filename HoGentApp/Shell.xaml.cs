@@ -94,5 +94,15 @@ namespace HoGentApp
         {
             this.SplitView.IsPaneOpen = !this.SplitView.IsPaneOpen;
         }
+
+        private void OpleidingenRadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            var frame = this.DataContext as Frame;
+            Page page = frame?.Content as Page;
+            if (page?.GetType() != typeof(Opleidingen))
+            {
+                frame.Navigate(typeof(Opleidingen));
+            }
+        }
     }
 }

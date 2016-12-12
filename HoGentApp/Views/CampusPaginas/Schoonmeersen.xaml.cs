@@ -15,21 +15,16 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace HoGentApp.Views
+namespace HoGentApp.Views.CampusPaginas
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Campussen : Page
+    public sealed partial class Schoonmeersen : Page
     {
-        public Campussen()
+        public Schoonmeersen()
         {
             this.InitializeComponent();
-        }
-
-        private void Schoonmeersen_tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Views.CampusPaginas.Schoonmeersen));
         }
     }
 }
