@@ -32,6 +32,9 @@
             <TextBlock FontWeight="bold" Padding="0 15 0 0" Text="Jouw Voorkeursopleiding(en):"/>
             <TextBlock x:Name="opleidingList"/>
         </StackPanel>
+
     </StackPanel>
+
+
 
 </Page>
