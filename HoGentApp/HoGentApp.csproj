@@ -89,6 +89,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="models\domain.cd" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -98,9 +99,22 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="models\Adres.cs" />
+    <Compile Include="models\Article.cs" />
+    <Compile Include="models\ArticleTarget.cs" />
+    <Compile Include="models\Campus.cs" />
+    <Compile Include="models\Education.cs" />
+    <Compile Include="models\Event.cs" />
+    <Compile Include="models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shell.xaml.cs">
       <DependentUpon>Shell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Views\AddCampus.xaml.cs">
+      <DependentUpon>AddCampus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Views\EducationAdmin.xaml.cs">
+      <DependentUpon>EducationAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CampusPaginas\Schoonmeersen.xaml.cs">
       <DependentUpon>Schoonmeersen.xaml</DependentUpon>
@@ -163,6 +177,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Shell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Views\AddCampus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Views\EducationAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
