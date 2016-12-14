@@ -9,8 +9,8 @@ namespace HogentAppAPI.Models
     class Event
     {
         public string Title { get; set; }
-        public string description { get; set; }
-        public DateTime date { get; set; }
-        public Campus campus { get; set; }
+        public string Description { get; set; }
+        public DateTime Date { get; set; }
+        public Campus Campus { get; set; }
     }
 }
