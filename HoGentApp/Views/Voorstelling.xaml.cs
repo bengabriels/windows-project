@@ -26,5 +26,23 @@ namespace HoGentApp.Views
         {
             this.InitializeComponent();
         }
+
+        private void opleidingCheckbox_Click(object sender, RoutedEventArgs e)
+        {
+            string selectedOpleidingText = string.Empty;
+            CheckBox[] checkboxes = new CheckBox[] { bedrijfsmanagementCheckbox, retailManagementCheckbox, officemanagementCheckbox, toegepasteInformaticaCheckbox};
+            foreach (CheckBox c in checkboxes)
+            {
+                if (c.IsChecked == true)
+                {
+                    if (selectedOpleidingText.Length > 1)
+                    {
+                        selectedOpleidingText += ", ";
+                    }
+                    selectedOpleidingText += c.Content;
+                }
+            }
+            opleidingList.Text = selectedOpleidingText;
+        }
     }
 }

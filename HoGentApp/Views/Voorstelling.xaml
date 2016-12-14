@@ -7,7 +7,31 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox Text="Voorstelling"></TextBox>
-    </Grid>
+
+    <StackPanel Grid.Row="1" Margin="50" >
+        <TextBlock  TextWrapping="Wrap" Text="Voornaam: " />
+        <TextBox x:Name="txtFirstName" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="Familienaam: "/>
+        <TextBox x:Name="txtLastName" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="E-mail: "/>
+        <TextBox x:Name="txtEmail" TextWrapping="Wrap" />
+        <TextBlock  TextWrapping="Wrap" Text="Gsm-nummer: "/>
+        <TextBox x:Name="txtPhone" TextWrapping="Wrap" />
+        <StackPanel Padding="0 15 0 0">
+            <TextBlock FontWeight="bold" Text="Selecteer je Voorkeursopleiding(en)"/>
+            <CheckBox Content="Bedrijfsmanagement" x:Name="bedrijfsmanagementCheckbox"
+              Click="opleidingCheckbox_Click"/>
+            <CheckBox Content="Retailmanagement" x:Name="retailManagementCheckbox" 
+              Click="opleidingCheckbox_Click"/>
+            <CheckBox Content="Office management" x:Name="officemanagementCheckbox"
+              Click="opleidingCheckbox_Click"/>
+            <CheckBox Content="Toegepaste informatica" x:Name="toegepasteInformaticaCheckbox"
+              Click="opleidingCheckbox_Click"/>
+
+            <!-- Display the selected campusses. -->
+            <TextBlock FontWeight="bold" Padding="0 15 0 0" Text="Jouw Voorkeursopleiding(en):"/>
+            <TextBlock x:Name="opleidingList"/>
+        </StackPanel>
+    </StackPanel>
+
 </Page>
