@@ -12,19 +12,13 @@ namespace HoGentApp.models
 
         public class Student
         {
-            private string firstName;
-            private string lastName;
-            private string email;
-            private string phoneNumber;
-            //private Adres adres;
+            public Student() {}
 
-
-        public Student() {}
-             
             public string FirstName { get; set; }
             public string LastName { get; set; }
             public string Email { get; set; }
             public string PhoneNumber { get; set; }
+            public List<Education> VoorkeursOpleidingen { get; set;}
             //public string Adres {get; set; }
 
     }

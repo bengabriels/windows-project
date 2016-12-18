@@ -27,24 +27,19 @@
         <TextBox x:Name="txtEmail" TextWrapping="Wrap" Text="{Binding Email, Mode=TwoWay}"/>
         <TextBlock  TextWrapping="Wrap" Text="Gsm-nummer: "/>
         <TextBox x:Name="txtPhone" TextWrapping="Wrap" Text="{Binding PhoneNumber, Mode=TwoWay}"/>
-        <!--
-        ONDERSTAANDE MOET IN VIEWMODEL KOMEN IPV CODE BEHIND
-        <StackPanel Padding="0 15 0 0">
-            <TextBlock FontWeight="bold" Text="Selecteer je Voorkeursopleiding(en)"/>
-            <CheckBox Content="Bedrijfsmanagement" x:Name="bedrijfsmanagementCheckbox"
-              Click="opleidingCheckbox_Click"/>
-            <CheckBox Content="Retailmanagement" x:Name="retailManagementCheckbox" 
-              Click="opleidingCheckbox_Click"/>
-            <CheckBox Content="Office management" x:Name="officemanagementCheckbox"
-              Click="opleidingCheckbox_Click"/>
-            <CheckBox Content="Toegepaste informatica" x:Name="toegepasteInformaticaCheckbox"
-              Click="opleidingCheckbox_Click"/>
-
-
-            <TextBlock FontWeight="bold" Padding="0 15 0 0" Text="Jouw Voorkeursopleiding(en):"/>
-            <TextBlock x:Name="opleidingList"/>
-        </StackPanel>
--->
+        
+        <!--VOORKEURSOPLEIDINGEN-->
+        <TextBlock TextWrapping="Wrap" Text="Kies je voorkeursopleidingen"/>
+        <!--Alle opleidingen weergeven met een checkbox-->
+        <ListBox ItemsSource="{Binding Opleidingen}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <!--Als opleiding is aangeduid, zet IsChecked property van opleiding op true in collection van opleidingen die bij deze student hoort-->
+                    <CheckBox Content="{Binding Name}" IsChecked="{Binding Path=IsChecked, Mode=TwoWay}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+       
 
          <!--We gebruiken de SaveStudentCommand method uit onze viewModel resource (bovenaan gedeclareerd)-->
         <Button Command="{Binding SaveStudentCommand, Source={StaticResource viewModel}}"
@@ -63,7 +58,17 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
+        
+        <!--TESTEN OF VOORKEURSOPLEIDINGEN WORDEN BIJGEHOUDEN-->
+            <ListBox ItemsSource="{Binding VoorkeursOpleidingen}" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <!--Als opleiding is aangeduid, zet IsChecked property van opleiding op true in collection van opleidingen die bij deze student hoort-->
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            
     </StackPanel>
 
 </Page>
