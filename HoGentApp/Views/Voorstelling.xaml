@@ -5,18 +5,30 @@
     xmlns:local="using:HoGentApp.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    xmlns:vm="using:HoGentApp.ViewModels"
+    >
 
+    <!--StudentViewModel viewModel opgeven als resource zodat we aan de properties kunnen om te binden-->
+    <Page.Resources>
+        <vm:StudentViewModel x:Name="viewModel"/>
+    </Page.Resources>
 
-    <StackPanel Grid.Row="1" Margin="50" >
+    <!--
+        Aangeven dat alles binnen dit stackpanel, tenzij anders vermeldt, de resource StudentViewModel gebruikt,
+        nodig voor de binding van de properties en het command
+    -->
+    <StackPanel Grid.Row="1" Margin="50" DataContext="{Binding Source={StaticResource viewModel}}">
         <TextBlock  TextWrapping="Wrap" Text="Voornaam: " />
-        <TextBox x:Name="txtFirstName" TextWrapping="Wrap" />
+        <TextBox x:Name="txtFirstName" TextWrapping="Wrap"  Text="{Binding FirstName, Mode=TwoWay}" />
         <TextBlock  TextWrapping="Wrap" Text="Familienaam: "/>
-        <TextBox x:Name="txtLastName" TextWrapping="Wrap" />
+        <TextBox x:Name="txtLastName" TextWrapping="Wrap" Text="{Binding LastName, Mode=TwoWay}"/>
         <TextBlock  TextWrapping="Wrap" Text="E-mail: "/>
-        <TextBox x:Name="txtEmail" TextWrapping="Wrap" />
+        <TextBox x:Name="txtEmail" TextWrapping="Wrap" Text="{Binding Email, Mode=TwoWay}"/>
         <TextBlock  TextWrapping="Wrap" Text="Gsm-nummer: "/>
-        <TextBox x:Name="txtPhone" TextWrapping="Wrap" />
+        <TextBox x:Name="txtPhone" TextWrapping="Wrap" Text="{Binding PhoneNumber, Mode=TwoWay}"/>
+        <!--
+        ONDERSTAANDE MOET IN VIEWMODEL KOMEN IPV CODE BEHIND
         <StackPanel Padding="0 15 0 0">
             <TextBlock FontWeight="bold" Text="Selecteer je Voorkeursopleiding(en)"/>
             <CheckBox Content="Bedrijfsmanagement" x:Name="bedrijfsmanagementCheckbox"
@@ -28,13 +40,30 @@
             <CheckBox Content="Toegepaste informatica" x:Name="toegepasteInformaticaCheckbox"
               Click="opleidingCheckbox_Click"/>
 
-            <!-- Display the selected campusses. -->
+
             <TextBlock FontWeight="bold" Padding="0 15 0 0" Text="Jouw Voorkeursopleiding(en):"/>
             <TextBlock x:Name="opleidingList"/>
         </StackPanel>
+-->
+
+         <!--We gebruiken de SaveStudentCommand method uit onze viewModel resource (bovenaan gedeclareerd)-->
+        <Button Command="{Binding SaveStudentCommand, Source={StaticResource viewModel}}"
+                Content="Bewaar"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
+        
+        
+        <!--TESTEN OF STUDENT WORDT TOEGEVOEGD-->
+        <ListView ItemsSource="{Binding Students}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding FirstName}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
     </StackPanel>
-
-
 
 </Page>

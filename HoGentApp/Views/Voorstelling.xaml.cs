@@ -27,6 +27,7 @@ namespace HoGentApp.Views
             this.InitializeComponent();
         }
 
+        /*
         private void opleidingCheckbox_Click(object sender, RoutedEventArgs e)
         {
             string selectedOpleidingText = string.Empty;
@@ -44,5 +45,6 @@ namespace HoGentApp.Views
             }
             opleidingList.Text = selectedOpleidingText;
         }
+        */
     }
 }
