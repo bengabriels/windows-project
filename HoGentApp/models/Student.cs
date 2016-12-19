@@ -9,8 +9,8 @@ using Windows.ApplicationModel;
 
 namespace HoGentApp.models
 {
-
-        public class Student
+ 
+        public class Student 
         {
             public Student() {}
 
@@ -19,7 +19,9 @@ namespace HoGentApp.models
             public string Email { get; set; }
             public string PhoneNumber { get; set; }
             public List<Education> VoorkeursOpleidingen { get; set;}
-            //public string Adres {get; set; }
+
+        
+        //public string Adres {get; set; }
 
     }
 }

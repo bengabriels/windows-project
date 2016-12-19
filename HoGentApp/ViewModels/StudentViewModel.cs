@@ -11,6 +11,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace HoGentApp.ViewModels
 {
     //Opgeven welk model dit ViewModel representeert
@@ -18,7 +19,9 @@ namespace HoGentApp.ViewModels
     {
         public StudentViewModel(Student student = null) : base(student) { }
 
-        ///////////// PROPERTIES UIT MODEL WRAPPEN EN BINDEN MET VIEW (enkel die waar we een binding voor nodig hebben in de view) /////////////
+
+        ///////////////////////////  PROPERTIES UIT MODEL WRAPPEN EN BINDEN MET VIEW (enkel die waar we een binding voor nodig hebben in de view)  ///////////////////////////
+
         public String FirstName { get { return This.FirstName; } set { SetProperty(This.FirstName, value, () => This.FirstName = value); } }
         public String LastName { get { return This.LastName; } set { SetProperty(This.LastName, value, () => This.LastName = value); } }
         public String Email { get { return This.Email; } set { SetProperty(This.Email, value, () => This.Email = value); } }
@@ -28,17 +31,17 @@ namespace HoGentApp.ViewModels
         //Observable List om opgehaalde data weer te geven in view (om te testen of command werkt)...
         public ObservableCollection<Student> Students { get; set; }
 
-        //Lijst bevat opleidingen
+        //Lijst bevat ALLE mogelijke opleidingen
         public ObservableCollection<Education> Opleidingen { get; set; }
-        private List<Education> GekozenOpleidingen;
 
 
-        ///////////// COMMANDS /////////////
+        //////////////////////////////////////////////////// COMMANDS ////////////////////////////////////////////////////
+
         public RelayCommand SaveStudentCommand { get; set; }
 
-
+        //Default constructor = nodig voor opbouw XAML pagina
         public StudentViewModel()
-        {
+        {        
             //Bij aanroepSaveStudentCommand SaveStudent method uitvoeren
             //Een command kan slechts 1 parameter hebben
             SaveStudentCommand = new RelayCommand((param) => SaveStudent(param));
@@ -51,10 +54,11 @@ namespace HoGentApp.ViewModels
 
             //De gekozen voorkeursopleidingen van de student
             VoorkeursOpleidingen = new List<Education>();
-
         }
 
-        ///////////// METHODS /////////////
+
+        //////////////////////////////////////////////////// METHODS ////////////////////////////////////////////////////
+
         private void SaveStudent(object param)
         {   
             //We overlopen de opleidingen en kijken welke er aangeduid zijn, de aangeduide voegen we toe aan de lijst VoorkeursOpleidingen.
@@ -71,6 +75,22 @@ namespace HoGentApp.ViewModels
             this.Students.Add(s);
 
             //TODO: BACKEND CALLEN EN STUDENT OBJECT MEEGEVEN
+
+
+            //Velden leegmaken na submit         
+            this.FirstName = string.Empty;
+            this.LastName = string.Empty;
+            this.Email = string.Empty;
+            this.PhoneNumber = string.Empty;
+
+            /*
+             * De wijzigingen zullen nooit zichtbaar worden in de view, want ObservableCollection ondersteunt geen raiseProperty voor properties van elementen
+             * Gevolg: Wanneer gebruiker op "Bewaar" klikt worden de invoervelden leeggemaakt, maar de aangeduide opleidingen blijven aangeduid.
+             * De oplossing: In Education.cs de property die moet kunnen wijzigen (hier IsChecked) NotifyPropertyChange laten afvuren en de klasse INotifyPropertyChanged laten implementeren
+            */
+            foreach (Education e in Opleidingen) {
+                e.IsChecked = false;
+            }
 
             Debug.WriteLine("Student toegevoegd met command");
         }
