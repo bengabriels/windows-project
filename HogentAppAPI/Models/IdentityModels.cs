@@ -33,5 +33,7 @@ namespace HogentAppApi.Models
         public System.Data.Entity.DbSet<HogentAppAPI.Models.Education> Educations { get; set; }
 
         public System.Data.Entity.DbSet<HogentAppAPI.Models.Campus> Campus { get; set; }
+
+        public System.Data.Entity.DbSet<HogentAppAPI.Models.Student> Students { get; set; }
     }
 }

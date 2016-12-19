@@ -20,7 +20,7 @@ namespace HoGentApp.models
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-
+        public string EducationId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 

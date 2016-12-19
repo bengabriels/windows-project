@@ -116,11 +116,17 @@
     <Compile Include="ViewModels\NotificationBase.cs" />
     <Compile Include="ViewModels\StudentViewModel.cs" />
     <Compile Include="ViewModels\ToekomstigeActiviteitenViewModel.cs" />
-    <Compile Include="Views\Admin\Views\AddCampus.xaml.cs">
-      <DependentUpon>AddCampus.xaml</DependentUpon>
+    <Compile Include="Views\Admin\Views\Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Views\CampusAdmin.xaml.cs">
+      <DependentUpon>CampusAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\Views\EducationAdmin.xaml.cs">
       <DependentUpon>EducationAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Views\StudentAdmin.xaml.cs">
+      <DependentUpon>StudentAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CampusPaginas\Schoonmeersen.xaml.cs">
       <DependentUpon>Schoonmeersen.xaml</DependentUpon>
@@ -186,13 +192,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Admin\Views\AddCampus.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Views\Admin\Views\Admin.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Admin\Views\CampusAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Admin\Views\EducationAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Views\StudentAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\CampusPaginas\Schoonmeersen.xaml">
       <SubType>Designer</SubType>
