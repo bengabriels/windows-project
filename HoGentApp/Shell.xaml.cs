@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using HoGentApp.Views;
+using HoGentApp.Views.Admin.Views;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -102,6 +103,16 @@ namespace HoGentApp
             if (page?.GetType() != typeof(Opleidingen))
             {
                 frame.Navigate(typeof(Opleidingen));
+            }
+        }
+
+        private void AdminRadioButton_Click(object sender, RoutedEventArgs e)
+        {
+            var frame = this.DataContext as Frame;
+            Page page = frame?.Content as Page;
+            if (page?.GetType() != typeof(Admin))
+            {
+                frame.Navigate(typeof(Admin));
             }
         }
     }

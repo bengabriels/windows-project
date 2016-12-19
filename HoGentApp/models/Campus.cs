@@ -1,8 +1,9 @@
 ﻿namespace HoGentApp.models
 {
-    public class Campus:ArticleTarget
+    public class Campus : ArticleTarget
     {
-        public string name { get; set; }
+        public int CampusId { get; set; }
+        public string Name { get; set; }
         public Adres Adres { get; set; }
     }
 }

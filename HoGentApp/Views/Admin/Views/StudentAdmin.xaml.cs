@@ -24,35 +24,20 @@ namespace HoGentApp.Views.Admin.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class AddCampus : Page
+    public sealed partial class StudentAdmin : Page
     {
-        Campus c;
-        private ObservableCollection<Campus> campus;
-        public AddCampus()
+        private ObservableCollection<Student> students;
+        public StudentAdmin()
         {
             this.InitializeComponent();
-            c = new Campus();
-            c.Adres = new Adres();
-            this.DataContext = c;
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
             HttpClient client = new HttpClient();
-            var jsonString = await client.GetStringAsync("http://localhost:1227/api/Campus");
-            campus = JsonConvert.DeserializeObject<ObservableCollection<Campus>>(jsonString);          //install newtonsoftJson
-            lv.ItemsSource = campus;
-        }
-
-        private async void AddCampusClick(object sender, RoutedEventArgs e)
-        {
-            //api/Campus
-            //campuses.Add(c);
-            HttpClient client = new HttpClient();
-            var jsonString = JsonConvert.SerializeObject(c);
-            var result = await client.PostAsync("http://localhost:1227/api/campus", new StringContent(jsonString,
-                            System.Text.Encoding.UTF8, "application/json"));
-            var status = result.StatusCode;
+            var jsonString = await client.GetStringAsync("http://localhost:1227/api/students");
+            students = JsonConvert.DeserializeObject<ObservableCollection<Student>>(jsonString);          //install newtonsoftJson
+            lv.ItemsSource = students;
         }
     }
 }
