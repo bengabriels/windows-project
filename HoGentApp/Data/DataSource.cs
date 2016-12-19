@@ -13,14 +13,14 @@ namespace HoGentApp.Data
 {
     public class DataSource
     {
-        public async Task<List<Education>>  getEducations()
+        public async Task<List<Education>> getEducations()
         {
             try
             {
                 Debug.WriteLine("http werkt");
                 HttpClient client = new HttpClient();
                 var jsonString = client.GetStringAsync("http://localhost:1227/api/education").Result;
-                 var educations = JsonConvert.DeserializeObject<ObservableCollection<Education>>(jsonString);
+                var educations = JsonConvert.DeserializeObject<ObservableCollection<Education>>(jsonString);
                 Debug.WriteLine("opleidingen opslaan");
                 return educations.ToList();
             }
@@ -30,6 +30,7 @@ namespace HoGentApp.Data
                 Debug.WriteLine(e.Message);
                 throw;
             }
+        }
             //await new HttpClient().GetAsync("");
             /*
             return new List<Education>()
@@ -40,7 +41,7 @@ namespace HoGentApp.Data
             new Education() {Name="Retailmanagement", Description="De omschrijving van Retailmanagement"},
             new Education() {Name="Toegepaste Informatica", Description="De omschrijving van Toegepaste Informatica"}
         };
-
+        */
         //NIEUWS FEEDS
         public static List<Article> NieuwsFeeds { get; set; } = new List<Article>()
         {
