@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HoGentApp.models
 {
-    interface ArticleTarget
+   public interface ArticleTarget
     {
 
     }
