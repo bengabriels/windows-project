@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HoGentApp.models
 {
-    class Article
+    public class Article
     {
         public string Title { get; set; }
         public string Description { get; set; }

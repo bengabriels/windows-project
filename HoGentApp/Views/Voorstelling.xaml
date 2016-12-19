@@ -19,6 +19,7 @@
         nodig voor de binding van de properties en het command
     -->
     <StackPanel Grid.Row="1" Margin="50" DataContext="{Binding Source={StaticResource viewModel}}">
+        <TextBlock TextWrapping="Wrap" Margin="0 15 0 5" FontWeight="Bold" Text="Vul je gegevens in:"/>
         <TextBlock  TextWrapping="Wrap" Text="Voornaam: " />
         <TextBox x:Name="txtFirstName" TextWrapping="Wrap"  Text="{Binding FirstName, Mode=TwoWay}" />
         <TextBlock  TextWrapping="Wrap" Text="Familienaam: "/>
@@ -27,11 +28,11 @@
         <TextBox x:Name="txtEmail" TextWrapping="Wrap" Text="{Binding Email, Mode=TwoWay}"/>
         <TextBlock  TextWrapping="Wrap" Text="Gsm-nummer: "/>
         <TextBox x:Name="txtPhone" TextWrapping="Wrap" Text="{Binding PhoneNumber, Mode=TwoWay}"/>
-        
+
         <!--VOORKEURSOPLEIDINGEN-->
-        <TextBlock TextWrapping="Wrap" Text="Kies je voorkeursopleidingen"/>
+        <TextBlock TextWrapping="Wrap" Margin="0 15 0 5" FontWeight="Bold" Text="Kies je voorkeursopleidingen:"/>
         <!--Alle opleidingen weergeven met een checkbox-->
-        <ListBox ItemsSource="{Binding Opleidingen}" >
+        <ListBox Margin="0 0 0 15" ItemsSource="{Binding Opleidingen}" >
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <!--Als opleiding is aangeduid, zet IsChecked property van opleiding op true in collection van opleidingen die bij deze student hoort-->
@@ -58,17 +59,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
-        <!--TESTEN OF VOORKEURSOPLEIDINGEN WORDEN BIJGEHOUDEN-->
-            <ListBox ItemsSource="{Binding VoorkeursOpleidingen}" >
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <!--Als opleiding is aangeduid, zet IsChecked property van opleiding op true in collection van opleidingen die bij deze student hoort-->
-                        <TextBlock Text="{Binding Name}"/>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-            
+                    
     </StackPanel>
 
 </Page>
