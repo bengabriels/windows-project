@@ -22,6 +22,11 @@
             <TextBlock HorizontalAlignment="Center" Text="HoGent Nieuws Feeds" FontSize="24" Margin="0 0 0 20" FontWeight="bold"></TextBlock>
             <!--De nieuwsfeeds weergeven-->
             <ListView ItemsSource="{Binding NieuwsFeeds}">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="0 0 0 15">

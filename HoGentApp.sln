@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoGentApp", "HoGentApp\HoGentApp.csproj", "{7F75494E-A4A8-4228-B81F-6E21ECA76E6B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A1B1150-6CEE-4E5B-876F-F6A390607624} = {8A1B1150-6CEE-4E5B-876F-F6A390607624}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HogentAppApi", "HogentAppApi\HogentAppApi.csproj", "{8A1B1150-6CEE-4E5B-876F-F6A390607624}"
 EndProject

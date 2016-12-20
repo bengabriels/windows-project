@@ -5,33 +5,39 @@
     xmlns:local="using:HoGentApp.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    xmlns:vm="using:HoGentApp.ViewModels"
+    >
 
+    <!--CampusViewModel viewModel opgeven als resource zodat we aan de properties kunnen om te binden-->
+    <Page.Resources>
+        <vm:CampusViewModel x:Name="viewModel"/>
+    </Page.Resources>
+
+    <!--
+        Aangeven dat alles binnen dit stackpanel, tenzij anders vermeldt, de resource CampusViewModel gebruikt
+    -->
     <ScrollViewer>
-        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Border Background="LightGray">
-                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25" Text="Campus Aalst"></TextBlock>
-            </Border>
-            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Bijloke"></TextBlock>
-            <Border Background="LightGray">
-                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Mercator"></TextBlock>
-            </Border>
-            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Ledeganck"></TextBlock>
-            <Border Background="LightGray">
-                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Melle"></TextBlock>
-            </Border>
-            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Grote Sikkel"></TextBlock>
-            <Border Background="LightGray">
-                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Schoonmeersen" Tapped="Schoonmeersen_tapped"></TextBlock>
-            </Border>
-            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Campus Vesalius"></TextBlock>
-            <Border Background="LightGray">
-                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Proefhove Bottelare"></TextBlock>
-            </Border>
-            <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Site Geraard de Duivelstraat"></TextBlock>
-            <Border Background="LightGray">
-                <TextBlock HorizontalAlignment="Center" Padding="0 15 0 25" FontSize="25"  Text="Site Buchtenstraat"></TextBlock>
-            </Border>
+        <StackPanel Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  DataContext="{Binding Source={StaticResource viewModel}}">
+            <TextBlock HorizontalAlignment="Center" Text="HoGent Campussen" FontSize="24" Margin="0 0 0 20" FontWeight="bold"></TextBlock>
+            <!--De Campussen weergeven-->
+            <ListView HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" ItemsSource="{Binding Campussen}"
+                      ItemClick="ListView_ItemClick"  
+                       IsItemClickEnabled="True" SelectionMode="None"
+                      >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="0 0 0 15">
+                            <TextBlock TextAlignment="Center" FontSize="19" Margin="10 15 10 5" Text="{Binding Name}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackPanel>
     </ScrollViewer>
 </Page>

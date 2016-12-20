@@ -15,7 +15,7 @@ namespace HoGentApp.Data
     {
         public async Task<List<Education>> getEducations()
         {
-            try
+           try
             {
                 Debug.WriteLine("http werkt");
                 HttpClient client = new HttpClient();
@@ -30,6 +30,7 @@ namespace HoGentApp.Data
                 Debug.WriteLine(e.Message);
                 throw;
             }
+            
         }
             //await new HttpClient().GetAsync("");
             /*

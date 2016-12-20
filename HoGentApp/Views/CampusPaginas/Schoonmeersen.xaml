@@ -7,7 +7,33 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <ScrollViewer>
+    <StackPanel Padding="15 15 15 15" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock TextAlignment="Center" FontSize="20" FontWeight="Bold" Text="Campus Schoonmeersen"></TextBlock>
+        <Image Source="../../Assets/Plan.png" Width="200" Margin="10 20 10 10"></Image>
+        <RichTextBlock>
+            <Paragraph>
+                <Run FontStyle="Italic" Text="Hieronder ziet u een overzicht van welk gebouw bij welke faculteit hoort:"></Run>
+                <LineBreak/>
+                <LineBreak/>
+                <Run FontWeight="Bold" Text="Gebouw B"></Run>
+                    <LineBreak/>
+                    <Run Text="Faculteit Bedrijf en Organisatie"></Run>
+                <LineBreak/>
+                <LineBreak/>
+                    <Run FontWeight="Bold" Text="Gebouw C"></Run>
+                    <LineBreak/>
+                    <Run Text="Faculteit Mens en Welzijn"></Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run FontWeight="Bold" Text="Gebouw P"></Run>
+                    <LineBreak/>
+                    <Run Text="Faculteit Natuur en Techniek"></Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run Text="De campus beschikt ook over een sporthal en een ruime parking."></Run>
+                </Paragraph>
+        </RichTextBlock>
+    </StackPanel>
+    </ScrollViewer>
 </Page>

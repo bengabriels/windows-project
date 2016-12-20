@@ -22,6 +22,11 @@
             <TextBlock HorizontalAlignment="Center" Text="Onze Toekomstige Activiteiten" FontSize="20" Margin="0 0 0 20" FontWeight="bold"></TextBlock>
             <!--De toekomstige activiteiten weergeven-->
             <ListView ItemsSource="{Binding ToekomstigeActiviteiten}">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="10 0 10 15">
