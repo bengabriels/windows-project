@@ -41,5 +41,15 @@ namespace HoGentApp.Views.Admin.Views
         {
             this.Frame.Navigate(typeof(CampusAdmin));
         }
+
+        private void Gebeurtenis_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GebeurtenisAdmin));
+        }
+
+        private void Article_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ArticleAdmin));
+        }
     }
 }

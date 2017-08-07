@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using System.Data.Entity;
+using HogentAppAPI.Models;
 
 namespace HogentAppApi.Models
 {
@@ -23,6 +25,7 @@ namespace HogentAppApi.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            Database.SetInitializer<ApplicationDbContext>(new DropCreateDatabaseIfModelChanges<ApplicationDbContext>());
         }
         
         public static ApplicationDbContext Create()
@@ -30,10 +33,27 @@ namespace HogentAppApi.Models
             return new ApplicationDbContext();
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            // some custom setup code added by yourself – this bit could be anything
+            //modelBuilder.Entity<Student>().HasMany<Education>(s => s.VoorkeursOpleidingen);
+
+
+
+            // the all important base class call! Add this line to make your problems go away.
+            base.OnModelCreating(modelBuilder);
+            /*var config = modelBuilder.Entity<Student>();
+            config.ToTable("Students");*/
+        }
+
         public System.Data.Entity.DbSet<HogentAppAPI.Models.Education> Educations { get; set; }
 
         public System.Data.Entity.DbSet<HogentAppAPI.Models.Campus> Campus { get; set; }
 
         public System.Data.Entity.DbSet<HogentAppAPI.Models.Student> Students { get; set; }
+
+        public System.Data.Entity.DbSet<HogentAppAPI.Models.Gebeurtenis> Gebeurtenis { get; set; }
+
+        public System.Data.Entity.DbSet<HogentAppAPI.Models.Article> Articles { get; set; }
     }
 }

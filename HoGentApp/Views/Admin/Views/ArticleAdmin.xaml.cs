@@ -24,46 +24,44 @@ namespace HoGentApp.Views.Admin.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class CampusAdmin : Page
+    public sealed partial class ArticleAdmin : Page
     {
-        Campus c;
-        private ObservableCollection<Campus> campus;
-        public CampusAdmin()
+        Article a;
+        private ObservableCollection<Article> artikels;
+        public ArticleAdmin()
         {
+            artikels = new ObservableCollection<Article>();
+            a = new Article();
             this.InitializeComponent();
-            campus = new ObservableCollection<Campus>();
-            c = new Campus();
-            c.Adres = new Adres();
-            sp.DataContext = c;
+            sp.DataContext = a;
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-                base.OnNavigatedTo(e);
-                HttpClient client = new HttpClient();
-                var jsonString = await client.GetStringAsync("http://localhost:1227/api/campus");
-                campus = JsonConvert.DeserializeObject<ObservableCollection<Campus>>(jsonString);          //install newtonsoftJson
-                lv.ItemsSource = campus;
+            base.OnNavigatedTo(e);
+            HttpClient client = new HttpClient();
+            var jsonString = await client.GetStringAsync("http://localhost:1227/api/article");
+            artikels = JsonConvert.DeserializeObject<ObservableCollection<Article>>(jsonString);          //install newtonsoftJson
+            lv.ItemsSource = artikels;
         }
 
         private async void AddCampusClick(object sender, RoutedEventArgs e)
         {
             //api/Campus
-            campus.Add(c);
+            artikels.Add(a);
             HttpClient client = new HttpClient();
-            var jsonString = JsonConvert.SerializeObject(c);
-            var result = await client.PostAsync("http://localhost:1227/api/campus", new StringContent(jsonString,
+            var jsonString = JsonConvert.SerializeObject(a);
+            var result = await client.PostAsync("http://localhost:1227/api/article", new StringContent(jsonString,
                             System.Text.Encoding.UTF8, "application/json"));
             var status = result.StatusCode;
         }
         private async void RemoveClick(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;
-            Campus rC = (Campus)b.DataContext;
-            campus.Remove(rC);
+            Article rA = (Article)b.DataContext;
+            artikels.Remove(rA);
             HttpClient client = new HttpClient();
-            var jsonString = JsonConvert.SerializeObject(rC);
-            int a;
-            var result = await client.DeleteAsync("http://localhost:1227/api/campus/" + rC.CampusId);
+            var jsonString = JsonConvert.SerializeObject(rA);
+            var result = await client.DeleteAsync("http://localhost:1227/api/article/" + rA.ArticleId);
             var status = result.StatusCode;
         }
     }

@@ -8,8 +8,8 @@ namespace HoGentApp.models
 {
     public class Article
     {
+        public int ArticleId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public List<ArticleTarget> Targets { get; set; }
     }
 }

@@ -14,7 +14,6 @@ namespace HogentAppAPI.Models
         public string LastName { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
-        [ForeignKey("EducationId")]
         public List<Education> VoorkeursOpleidingen { get; set; }
         public Adres Adres { get; set; }
     }

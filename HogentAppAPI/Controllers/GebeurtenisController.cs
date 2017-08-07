@@ -10,51 +10,47 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using HogentAppAPI.Models;
 using HogentAppApi.Models;
-using System.Web.Mvc;
-using System.Web;
-using System.Data.Entity.Validation;
 
 namespace HogentAppApi.Controllers
 {
-
-    public class StudentsController : ApiController
+    public class GebeurtenisController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: api/Students
-        public IQueryable<Student> GetStudents()
+        // GET: api/Gebeurtenis
+        public IQueryable<Gebeurtenis> GetGebeurtenis()
         {
-            return db.Students;
+            return db.Gebeurtenis;
         }
 
-        // GET: api/Students/5
-        [ResponseType(typeof(Student))]
-        public IHttpActionResult GetStudent(int id)
+        // GET: api/Gebeurtenis/5
+        [ResponseType(typeof(Gebeurtenis))]
+        public IHttpActionResult GetGebeurtenis(int id)
         {
-            Student student = db.Students.Find(id);
-            if (student == null)
+            Gebeurtenis gebeurtenis = db.Gebeurtenis.Find(id);
+            if (gebeurtenis == null)
             {
                 return NotFound();
             }
 
-            return Ok(student);
+            return Ok(gebeurtenis);
         }
 
-        // PUT: api/Students/5
+        // PUT: api/Gebeurtenis/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutStudent(int id, Student student)
+        public IHttpActionResult PutGebeurtenis(int id, Gebeurtenis gebeurtenis)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != student.StudentId)
+            if (id != gebeurtenis.GebeurtenisId)
             {
                 return BadRequest();
             }
 
-            db.Entry(student).State = EntityState.Modified;
+            db.Entry(gebeurtenis).State = EntityState.Modified;
 
             try
             {
@@ -62,7 +58,7 @@ namespace HogentAppApi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StudentExists(id))
+                if (!GebeurtenisExists(id))
                 {
                     return NotFound();
                 }
@@ -75,35 +71,35 @@ namespace HogentAppApi.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Students
-        [ResponseType(typeof(Student))]
-        public IHttpActionResult PostStudent(Student student)
+        // POST: api/Gebeurtenis
+        [ResponseType(typeof(Gebeurtenis))]
+        public IHttpActionResult PostGebeurtenis(Gebeurtenis gebeurtenis)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Students.Add(student);
+            db.Gebeurtenis.Add(gebeurtenis);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = student.StudentId }, student);
+            return CreatedAtRoute("DefaultApi", new { id = gebeurtenis.GebeurtenisId }, gebeurtenis);
         }
 
-        // DELETE: api/Students/5
-        [ResponseType(typeof(Student))]
-        public IHttpActionResult DeleteStudent(int id)
+        // DELETE: api/Gebeurtenis/5
+        [ResponseType(typeof(Gebeurtenis))]
+        public IHttpActionResult DeleteGebeurtenis(int id)
         {
-            Student student = db.Students.Find(id);
-            if (student == null)
+            Gebeurtenis gebeurtenis = db.Gebeurtenis.Find(id);
+            if (gebeurtenis == null)
             {
                 return NotFound();
             }
 
-            db.Students.Remove(student);
+            db.Gebeurtenis.Remove(gebeurtenis);
             db.SaveChanges();
 
-            return Ok(student);
+            return Ok(gebeurtenis);
         }
 
         protected override void Dispose(bool disposing)
@@ -115,9 +111,9 @@ namespace HogentAppApi.Controllers
             base.Dispose(disposing);
         }
 
-        private bool StudentExists(int id)
+        private bool GebeurtenisExists(int id)
         {
-            return db.Students.Count(e => e.StudentId == id) > 0;
+            return db.Gebeurtenis.Count(e => e.GebeurtenisId == id) > 0;
         }
     }
 }

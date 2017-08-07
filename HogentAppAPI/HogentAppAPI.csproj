@@ -207,8 +207,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\CampusController.cs" />
     <Compile Include="Controllers\EducationController.cs" />
+    <Compile Include="Controllers\GebeurtenisController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -222,7 +224,7 @@
     <Compile Include="Models\ArticleTarget.cs" />
     <Compile Include="Models\Campus.cs" />
     <Compile Include="Models\Education.cs" />
-    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\Gebeurtenis.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

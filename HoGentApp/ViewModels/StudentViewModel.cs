@@ -33,6 +33,7 @@ namespace HoGentApp.ViewModels
         //Lijst bevat ALLE mogelijke opleidingen
         public ObservableCollection<Education> Opleidingen { get; set; }
 
+        DataSource dataSource;
 
         //////////////////////////////////////////////////// COMMANDS ////////////////////////////////////////////////////
 
@@ -41,6 +42,7 @@ namespace HoGentApp.ViewModels
         //Default constructor = nodig voor opbouw XAML pagina
         public StudentViewModel()
         {
+
             DataSource dataSource = new DataSource();
 
             //Bij aanroepSaveStudentCommand SaveStudent method uitvoeren
@@ -51,7 +53,7 @@ namespace HoGentApp.ViewModels
             Students = new ObservableCollection<Student>();
 
             //De opleidingen waaruit de student kan kiezen
-            Opleidingen = new ObservableCollection<Education>(dataSource.getEducations().Result);
+            Opleidingen = new ObservableCollection<Education>(dataSource.getEducations());
 
             //De gekozen voorkeursopleidingen van de student
             VoorkeursOpleidingen = new List<Education>();
@@ -76,6 +78,8 @@ namespace HoGentApp.ViewModels
             this.Students.Add(s);
 
             //TODO: BACKEND CALLEN EN STUDENT OBJECT MEEGEVEN
+
+            dataSource.saveStudent(s);
 
 
             //Velden leegmaken na submit         

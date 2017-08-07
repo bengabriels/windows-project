@@ -120,11 +120,17 @@
     <Compile Include="Views\Admin\Views\Admin.xaml.cs">
       <DependentUpon>Admin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\Views\ArticleAdmin.xaml.cs">
+      <DependentUpon>ArticleAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\Views\CampusAdmin.xaml.cs">
       <DependentUpon>CampusAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\Views\EducationAdmin.xaml.cs">
       <DependentUpon>EducationAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Views\GebeurtenisAdmin.xaml.cs">
+      <DependentUpon>GebeurtenisAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\Views\StudentAdmin.xaml.cs">
       <DependentUpon>StudentAdmin.xaml</DependentUpon>
@@ -198,11 +204,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Admin\Views\ArticleAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Admin\Views\CampusAdmin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Admin\Views\EducationAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Admin\Views\GebeurtenisAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

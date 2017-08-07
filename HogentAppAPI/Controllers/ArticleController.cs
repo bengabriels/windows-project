@@ -10,51 +10,47 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using HogentAppAPI.Models;
 using HogentAppApi.Models;
-using System.Web.Mvc;
-using System.Web;
-using System.Data.Entity.Validation;
 
 namespace HogentAppApi.Controllers
 {
-
-    public class StudentsController : ApiController
+    public class ArticleController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: api/Students
-        public IQueryable<Student> GetStudents()
+        // GET: api/Article
+        public IQueryable<Article> GetArticles()
         {
-            return db.Students;
+            return db.Articles;
         }
 
-        // GET: api/Students/5
-        [ResponseType(typeof(Student))]
-        public IHttpActionResult GetStudent(int id)
+        // GET: api/Article/5
+        [ResponseType(typeof(Article))]
+        public IHttpActionResult GetArticle(int id)
         {
-            Student student = db.Students.Find(id);
-            if (student == null)
+            Article article = db.Articles.Find(id);
+            if (article == null)
             {
                 return NotFound();
             }
 
-            return Ok(student);
+            return Ok(article);
         }
 
-        // PUT: api/Students/5
+        // PUT: api/Article/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutStudent(int id, Student student)
+        public IHttpActionResult PutArticle(int id, Article article)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != student.StudentId)
+            if (id != article.ArticleId)
             {
                 return BadRequest();
             }
 
-            db.Entry(student).State = EntityState.Modified;
+            db.Entry(article).State = EntityState.Modified;
 
             try
             {
@@ -62,7 +58,7 @@ namespace HogentAppApi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StudentExists(id))
+                if (!ArticleExists(id))
                 {
                     return NotFound();
                 }
@@ -75,35 +71,35 @@ namespace HogentAppApi.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Students
-        [ResponseType(typeof(Student))]
-        public IHttpActionResult PostStudent(Student student)
+        // POST: api/Article
+        [ResponseType(typeof(Article))]
+        public IHttpActionResult PostArticle(Article article)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Students.Add(student);
+            db.Articles.Add(article);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = student.StudentId }, student);
+            return CreatedAtRoute("DefaultApi", new { id = article.ArticleId }, article);
         }
 
-        // DELETE: api/Students/5
-        [ResponseType(typeof(Student))]
-        public IHttpActionResult DeleteStudent(int id)
+        // DELETE: api/Article/5
+        [ResponseType(typeof(Article))]
+        public IHttpActionResult DeleteArticle(int id)
         {
-            Student student = db.Students.Find(id);
-            if (student == null)
+            Article article = db.Articles.Find(id);
+            if (article == null)
             {
                 return NotFound();
             }
 
-            db.Students.Remove(student);
+            db.Articles.Remove(article);
             db.SaveChanges();
 
-            return Ok(student);
+            return Ok(article);
         }
 
         protected override void Dispose(bool disposing)
@@ -115,9 +111,9 @@ namespace HogentAppApi.Controllers
             base.Dispose(disposing);
         }
 
-        private bool StudentExists(int id)
+        private bool ArticleExists(int id)
         {
-            return db.Students.Count(e => e.StudentId == id) > 0;
+            return db.Articles.Count(e => e.ArticleId == id) > 0;
         }
     }
 }

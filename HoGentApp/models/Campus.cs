@@ -5,5 +5,7 @@
         public int CampusId { get; set; }
         public string Name { get; set; }
         public Adres Adres { get; set; }
+
+        public bool IsChecked { get; set; }
     }
 }

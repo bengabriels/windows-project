@@ -18,7 +18,7 @@ namespace HoGentApp.ViewModels
 
         public NieuwsFeedsViewModel()
         {
-            NieuwsFeeds = new ObservableCollection<Article>(DataSource.NieuwsFeeds);
+            NieuwsFeeds = new ObservableCollection<Article>(new DataSource().getNieuwsFeeds());
         }
 
     }

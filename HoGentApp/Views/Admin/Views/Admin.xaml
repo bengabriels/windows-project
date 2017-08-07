@@ -17,5 +17,11 @@
         <StackPanel Tapped="Campus_Tapped">
             <TextBlock Name="Campus" >Campussen</TextBlock>
         </StackPanel>
+        <StackPanel Tapped="Gebeurtenis_Tapped">
+            <TextBlock Name="Gebeurtenis" >Gebeurtenissen</TextBlock>
+        </StackPanel>
+        <StackPanel Tapped="Article_Tapped">
+            <TextBlock Name="Article" >artikels</TextBlock>
+        </StackPanel>
     </StackPanel>
 </Page>
