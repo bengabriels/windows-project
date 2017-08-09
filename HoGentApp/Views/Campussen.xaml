@@ -11,7 +11,7 @@
 
     <!--CampusViewModel viewModel opgeven als resource zodat we aan de properties kunnen om te binden-->
     <Page.Resources>
-        <vm:CampusViewModel x:Name="viewModel"/>
+        <!--<vm:CampusViewModel x:Name="viewModel"/>-->
     </Page.Resources>
 
     <!--

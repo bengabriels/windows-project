@@ -33,7 +33,7 @@ namespace HoGentApp.ViewModels
         //Lijst bevat ALLE mogelijke opleidingen
         public ObservableCollection<Education> Opleidingen { get; set; }
 
-        DataSource dataSource;
+        DataSource dataSource = new DataSource();
 
         //////////////////////////////////////////////////// COMMANDS ////////////////////////////////////////////////////
 

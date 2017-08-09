@@ -32,11 +32,11 @@ namespace HoGentApp.Views
         {
             //Cast het aangeklikte item uit de lijst naar een Campus object
             var aangekliktItem = (Campus)e.ClickedItem;
-
+            /*
             //Kijk of het item de naam Schoonmeersen heeft, zoja navigeer naar pagina Schoonmeersen
             if (aangekliktItem.Name == "Schoonmeersen") {
                 this.Frame.Navigate(typeof(Views.CampusPaginas.Schoonmeersen));
-            }
+            }*/
         }
     }
 }
