@@ -84,10 +84,13 @@ namespace HogentAppApi.Controllers
                 return BadRequest(ModelState);
             }
 
+            student.Adres = new Adres();
+
             db.Students.Add(student);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = student.StudentId }, student);
+            return Ok(student);
+            // return CreatedAtRoute("DefaultApi", new { id = student.StudentId }, student);
         }
 
         // DELETE: api/Students/5
