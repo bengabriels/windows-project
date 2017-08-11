@@ -23,6 +23,7 @@ namespace HoGentApp.models
         public string EducationId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public string DescriptionShort { get; set; }
 
         //public bool IsChecked { get; set; }
 
@@ -39,6 +40,11 @@ namespace HoGentApp.models
                     this.isChecked = value;
                     NotifyPropertyChanged();
             }
+        }
+
+        public string GetImageSource
+        {
+            get { return "../Assets/" + Name + ".jpg"; }
         }
     }
 }

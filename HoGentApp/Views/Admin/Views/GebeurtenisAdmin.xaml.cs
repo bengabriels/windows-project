@@ -28,7 +28,7 @@ namespace HoGentApp.Views.Admin.Views
     public sealed partial class GebeurtenisAdmin : Page
     {
         Gebeurtenis g;
-        private ObservableCollection<Campus> campussen;
+        private ObservableCollection<Education> campussen;
         private ObservableCollection<Gebeurtenis> gebeurtenissen;
         public GebeurtenisAdmin()
         {
@@ -48,14 +48,14 @@ namespace HoGentApp.Views.Admin.Views
             lv.ItemsSource = gebeurtenissen;
 
             jsonString = await client.GetStringAsync("http://localhost:1227/api/campus");
-            campusList.ItemsSource = JsonConvert.DeserializeObject<ObservableCollection<Campus>>(jsonString);          //install newtonsoftJson
+            campusList.ItemsSource = JsonConvert.DeserializeObject<ObservableCollection<Education>>(jsonString);          //install newtonsoftJson
         }
 
         private async void AddCampusClick(object sender, RoutedEventArgs e)
         {
             //api/Campus
 
-            ObservableCollection<Campus> campussen =(ObservableCollection < Campus >) campusList.ItemsSource;
+            ObservableCollection<Campus> campussen =(ObservableCollection <Campus>) campusList.ItemsSource;
             g.Campus= campussen.Where(c => c.IsChecked).First();
             if(g.Campus==null)
                 g.Campus = new Campus { Name = "SChoonmeersen", Adres = new Adres { City = "Gent", Street = "Voskeslaan", StreetNumber = 12 } };

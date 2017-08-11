@@ -1,4 +1,5 @@
 ﻿
+using HoGentApp.models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,8 +29,6 @@ namespace HoGentApp.Views
             this.InitializeComponent();
         }
 
-       
-
         private void ImageToegepasteInformatica_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Views.OpleidingPaginas.ToegepasteInformatica));
@@ -45,6 +44,13 @@ namespace HoGentApp.Views
         private void ImageBedrijfsManagement_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Views.OpleidingPaginas.Bedrijfsmanagement));
+        }
+
+        private void ListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Education item = (Education)e.ClickedItem;
+            //TODO:
+            this.Frame.Navigate(typeof(Views.OpleidingPaginas.EducationDetail), item);
         }
 
     }

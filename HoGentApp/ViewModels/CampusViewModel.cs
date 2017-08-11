@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 
 namespace HoGentApp.ViewModels
 {
-    class CampusViewModel : NotificationBase<Campus>
+    class CampusViewModel : NotificationBase<Education>
     {
-        public CampusViewModel(Campus campus = null) : base(campus) { }
+        public CampusViewModel(Education campus = null) : base(campus) { }
 
 
-        public ObservableCollection<Campus> Campussen { get; set; }
+        public ObservableCollection<Education> Campussen { get; set; }
 
         public CampusViewModel()
         {
             DataSource dataSource = new DataSource();
-            Campussen = new ObservableCollection<Campus>(dataSource.getCampus());
+            Campussen = new ObservableCollection<Education>(dataSource.getCampus());
         }
     }
 }

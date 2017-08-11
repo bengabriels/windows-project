@@ -16,27 +16,28 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace HoGentApp.Views
+namespace HoGentApp.Views.OpleidingPaginas
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Campussen : Page
+    public sealed partial class EducationDetail : Page
     {
-        public Campussen()
+        public string EducationName { get; set; }
+        public string Description { get; set; }
+        public string ImageSource { get; set; }
+        public EducationDetail()
         {
             this.InitializeComponent();
+            this.DataContext = this;
         }
 
-        private void ListView_ItemClick(object sender, ItemClickEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //Cast het aangeklikte item uit de lijst naar een Campus object
-            var aangekliktItem = (Education)e.ClickedItem;
-            /*
-            //Kijk of het item de naam Schoonmeersen heeft, zoja navigeer naar pagina Schoonmeersen
-            if (aangekliktItem.Name == "Schoonmeersen") {
-                this.Frame.Navigate(typeof(Views.CampusPaginas.Schoonmeersen));
-            }*/
+            Education education = e.Parameter as Education;
+            EducationName = education.Name;
+            Description = education.Description;
+            ImageSource = "../" + education.GetImageSource;
         }
     }
 }
