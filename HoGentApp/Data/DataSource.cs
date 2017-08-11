@@ -79,6 +79,7 @@ namespace HoGentApp.Data
                 var jsonString = JsonConvert.SerializeObject(s);
                 var result = await client.PostAsync("http://localhost:1227/api/students", new StringContent(jsonString,
                                 System.Text.Encoding.UTF8, "application/json"));
+                Debug.WriteLine(result);
                 var status = result.StatusCode;
             }
             catch (Exception e)
