@@ -113,11 +113,11 @@ namespace HoGentApp.Data
         };
 
 
-        public List<Education> getCampus()
+        public List<Campus> getCampus()
         {
             HttpClient client = new HttpClient();
             var jsonString = client.GetStringAsync("http://localhost:1227/api/campus").Result;
-            var campus = JsonConvert.DeserializeObject<ObservableCollection<Education>>(jsonString);          //install newtonsoftJson
+            var campus = JsonConvert.DeserializeObject<ObservableCollection<Campus>>(jsonString);          //install newtonsoftJson
             return campus.ToList();
         }
 /*

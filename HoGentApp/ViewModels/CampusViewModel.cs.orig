@@ -19,11 +19,7 @@ namespace HoGentApp.ViewModels
         public CampusViewModel()
         {
             DataSource dataSource = new DataSource();
-<<<<<<< HEAD
-            Campussen = new ObservableCollection<Education>(dataSource.getCampus());
-=======
             Campussen = new ObservableCollection<Campus>(dataSource.getCampus());
->>>>>>> c82911f8371fb3f31bc809cb675c6b7c69fa3de1
         }
     }
 }
