@@ -6,7 +6,13 @@
     xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Converters="using:HoGentApp.Utility"
     mc:Ignorable="d">
+
+    <Page.Resources>
+        <Converters:DateTimeToDateTimeOffsetConverter
+    x:Key="DateTimeToDateTimeOffsetConverter"/>
+    </Page.Resources>
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel x:Name="sp">
@@ -17,11 +23,12 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock>Beschrijving</TextBlock>
-                <TextBox Text="{Binding Adres.City, Mode=TwoWay}"></TextBox>
+                <TextBox Text="{Binding Description, Mode=TwoWay}"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock>Datum</TextBlock>
-               <!-- <DatePicker SelectedDate="{Binding Date,Mode=TwoWay}"/>-->
+                <DatePicker Date="{Binding Date, Converter={StaticResource DateTimeToDateTimeOffsetConverter}, Mode=TwoWay}"/>
+                <!--   Date="{Binding SomeDateTime, Converter={StaticResource DateTimeToDateTimeOffsetConverter}, Mode=TwoWay}" -->
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock>Campus</TextBlock>
@@ -33,7 +40,7 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
-            <Button  Content="Toevoegen" Click="AddCampusClick"></Button>
+            <Button  Content="Toevoegen" Click="AddEventClick"></Button>
         </StackPanel>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <ListView x:Name="lv">

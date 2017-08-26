@@ -28,7 +28,7 @@ namespace HoGentApp.Views.Admin.Views
     public sealed partial class GebeurtenisAdmin : Page
     {
         Gebeurtenis g;
-        private ObservableCollection<Education> campussen;
+        private ObservableCollection<Campus> campussen;
         private ObservableCollection<Gebeurtenis> gebeurtenissen;
         public GebeurtenisAdmin()
         {
@@ -48,10 +48,10 @@ namespace HoGentApp.Views.Admin.Views
             lv.ItemsSource = gebeurtenissen;
 
             jsonString = await client.GetStringAsync("http://localhost:1227/api/campus");
-            campusList.ItemsSource = JsonConvert.DeserializeObject<ObservableCollection<Education>>(jsonString);          //install newtonsoftJson
+            campusList.ItemsSource = JsonConvert.DeserializeObject<ObservableCollection<Campus>>(jsonString);          //install newtonsoftJson
         }
 
-        private async void AddCampusClick(object sender, RoutedEventArgs e)
+        private async void AddEventClick(object sender, RoutedEventArgs e)
         {
             //api/Campus
 
@@ -74,8 +74,7 @@ namespace HoGentApp.Views.Admin.Views
             gebeurtenissen.Remove(rG);
             HttpClient client = new HttpClient();
             var jsonString = JsonConvert.SerializeObject(rG);
-            int a;
-            var result = await client.DeleteAsync("http://localhost:1227/api/campus/" + rG.GebeurtenisId);
+            var result = await client.DeleteAsync("http://localhost:1227/api/gebeurtenis/" + rG.GebeurtenisId);
             var status = result.StatusCode;
         }
     }

@@ -38,7 +38,10 @@ namespace HogentAppApi.Models
             // some custom setup code added by yourself – this bit could be anything
             //modelBuilder.Entity<Student>().HasMany<Education>(s => s.VoorkeursOpleidingen);
 
-
+            modelBuilder.Entity<Gebeurtenis>()
+            .HasOptional(c => c.Campus)
+            .WithMany()
+            .Map(m => m.MapKey("CampusId"));
 
             // the all important base class call! Add this line to make your problems go away.
             base.OnModelCreating(modelBuilder);

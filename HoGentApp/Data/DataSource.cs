@@ -91,9 +91,22 @@ namespace HoGentApp.Data
         }
 
         //TOEKOMSTIGE ACTIVITEITEN
-        public static List<Gebeurtenis> ToekomstigeActiviteiten { get; set; } = new List<Gebeurtenis>()
+        public static List<Gebeurtenis> getGebeurtenissen()
         {
-            
+            try
+            {
+                HttpClient client = new HttpClient();
+                var jsonString = client.GetStringAsync("http://localhost:1227/api/gebeurtenis").Result;
+                var gebeurtenissen = JsonConvert.DeserializeObject<ObservableCollection<Gebeurtenis>>(jsonString);
+                return gebeurtenissen.ToList();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("error");
+                Debug.WriteLine(e.Message);
+                throw;
+            }
+            /*
                        new Gebeurtenis() {Title="Kerstmarkt",
                         Description ="De kerstmarkt van HoGent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit finibus felis sed ultricies. Vestibulum aliquet vestibulum magna, dignissim finibus erat commodo vitae. Nunc accumsan neque eu nunc lacinia eleifend. Cras a urna arcu. Sed vitae odio sit amet urna dictum pretium. Fusce vestibulum ante in lacus finibus, sit amet volutpat leo porttitor. Donec sed facilisis tellus. Suspendisse velit risus, vulputate eu aliquet eu, accumsan at eros. Nulla sit amet commodo risus. Morbi mollis nisl et sapien pellentesque sollicitudin. In venenatis nisl quis urna euismod porta. Aenean vel ex arcu. Proin rutrum et nulla nec aliquam. Cras elementum sapien quis.",
                         Campus = new Campus() { Name="Schoonmeersen", Adres = new Adres {City = "Gent", Street="Valentin Vaerewijckweg", StreetNumber=1} },
@@ -109,8 +122,8 @@ namespace HoGentApp.Data
                         Campus = new Campus() { Name="Schoonmeersen", Adres = new Adres {City = "Gent", Street="Valentin Vaerewijckweg", StreetNumber=1} },
                         Date = new DateTime(2016, 12, 25)
             }
-      
-        };
+      */
+        }
 
 
         public List<Campus> getCampus()

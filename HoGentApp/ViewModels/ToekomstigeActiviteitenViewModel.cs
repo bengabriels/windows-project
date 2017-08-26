@@ -18,7 +18,7 @@ namespace HoGentApp.ViewModels
 
         public ToekomstigeActiviteitenViewModel() {
             //Lijst opvullen met data uit backend
-            ToekomstigeActiviteiten = new ObservableCollection<Gebeurtenis>(DataSource.ToekomstigeActiviteiten);
+            ToekomstigeActiviteiten = new ObservableCollection<Gebeurtenis>(DataSource.getGebeurtenissen());
         }
     }
 }

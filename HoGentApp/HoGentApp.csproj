@@ -111,6 +111,8 @@
     <Compile Include="Shell.xaml.cs">
       <DependentUpon>Shell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utility\DateTimeConverter.cs" />
+    <Compile Include="Utility\DateTimeToDateTimeOffsetConverter.cs" />
     <Compile Include="Utility\RelayCommand.cs" />
     <Compile Include="ViewModels\CampusViewModel.cs" />
     <Compile Include="ViewModels\EducationViewModel.cs" />
