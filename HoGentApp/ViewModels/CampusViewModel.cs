@@ -12,7 +12,7 @@ namespace HoGentApp.ViewModels
     class CampusViewModel : NotificationBase<Campus>
     {
         public CampusViewModel(Campus campus = null) : base(campus) { }
-
+        private ObservableCollection<Campus> campus;
 
         public ObservableCollection<Campus> Campussen { get; set; }
 

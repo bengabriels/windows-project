@@ -17,11 +17,13 @@
     <!--
         Aangeven dat alles binnen dit stackpanel, tenzij anders vermeldt, de resource CampusViewModel gebruikt
     -->
+
+
     <ScrollViewer>
         <StackPanel Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
             <TextBlock HorizontalAlignment="Center" Text="HoGent Campussen" FontSize="24" Margin="0 0 0 20" FontWeight="bold"></TextBlock>
             <!--De Campussen weergeven-->
-            <ListView HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" ItemsSource="{Binding Campussen}"
+            <ListView x:Name="lv" HorizontalContentAlignment="Stretch" HorizontalAlignment="Stretch" ItemsSource="{Binding Campussen}"
                       ItemClick="ListView_ItemClick"  
                        IsItemClickEnabled="True" SelectionMode="None"
                       >

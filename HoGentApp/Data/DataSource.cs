@@ -93,10 +93,11 @@ namespace HoGentApp.Data
         //TOEKOMSTIGE ACTIVITEITEN
         public static List<Gebeurtenis> getGebeurtenissen()
         {
+            string jsonString = "null";
             try
             {
                 HttpClient client = new HttpClient();
-                var jsonString = client.GetStringAsync("http://localhost:1227/api/gebeurtenis").Result;
+                jsonString = client.GetStringAsync("http://localhost:1227/api/gebeurtenis").Result;
                 var gebeurtenissen = JsonConvert.DeserializeObject<ObservableCollection<Gebeurtenis>>(jsonString);
                 return gebeurtenissen.ToList();
             }

@@ -25,6 +25,7 @@ namespace HoGentApp.Views.Admin.Views
         public Admin()
         {
             this.InitializeComponent();
+            AdminList.Visibility = Visibility.Collapsed;
         }
 
         private void Student_Tapped(object sender, TappedRoutedEventArgs e)
@@ -50,6 +51,15 @@ namespace HoGentApp.Views.Admin.Views
         private void Article_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ArticleAdmin));
+        }
+
+        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if(Admintb.Text =="admin" && Wachtwoordtb.Text == "ww")
+            {
+                AdminList.Visibility = Visibility.Visible;
+
+            }
         }
     }
 }

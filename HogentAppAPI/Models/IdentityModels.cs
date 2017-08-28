@@ -26,6 +26,9 @@ namespace HogentAppApi.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
             Database.SetInitializer<ApplicationDbContext>(new DropCreateDatabaseIfModelChanges<ApplicationDbContext>());
+
+
+            Configuration.ProxyCreationEnabled = false;
         }
         
         public static ApplicationDbContext Create()
@@ -39,7 +42,7 @@ namespace HogentAppApi.Models
             //modelBuilder.Entity<Student>().HasMany<Education>(s => s.VoorkeursOpleidingen);
 
             modelBuilder.Entity<Gebeurtenis>()
-            .HasOptional(c => c.Campus)
+            .HasRequired(c => c.Campus)
             .WithMany()
             .Map(m => m.MapKey("CampusId"));
 

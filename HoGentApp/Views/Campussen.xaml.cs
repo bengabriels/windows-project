@@ -1,8 +1,11 @@
 ﻿using HoGentApp.models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -23,9 +26,18 @@ namespace HoGentApp.Views
     /// </summary>
     public sealed partial class Campussen : Page
     {
+
+        private ObservableCollection<Campus> campus;
         public Campussen()
         {
             this.InitializeComponent();
+        }
+
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            campus = viewModel.Campussen;
+            lv.ItemsSource = viewModel.Campussen;
         }
 
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)

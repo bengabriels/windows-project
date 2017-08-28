@@ -8,6 +8,14 @@
     mc:Ignorable="d">
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="15 0 15 0">
+        <StackPanel>
+            <TextBlock Text="Admin"/>
+            <TextBox x:Name="Admintb"/>
+            <TextBlock Text="Wachtwoord"/>
+            <TextBox x:Name="Wachtwoordtb"/>
+            <Button Tapped="Button_Tapped">Log in</Button>
+        </StackPanel>
+        <StackPanel x:Name="AdminList">
         <StackPanel Tapped="Student_Tapped">
          <TextBlock Name="Student" >Studenten</TextBlock>   
         </StackPanel>
@@ -22,6 +30,7 @@
         </StackPanel>
         <StackPanel Tapped="Article_Tapped">
             <TextBlock Name="Article" >artikels</TextBlock>
+        </StackPanel>
         </StackPanel>
     </StackPanel>
 </Page>
