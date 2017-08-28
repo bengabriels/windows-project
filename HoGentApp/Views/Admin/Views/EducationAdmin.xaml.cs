@@ -61,7 +61,6 @@ namespace HoGentApp.Views.Admin.Views
             educations.Remove(rE);
             HttpClient client = new HttpClient();
             var jsonString = JsonConvert.SerializeObject(rE);
-            int a;
             var result = await client.DeleteAsync("http://localhost:1227/api/education/" + rE.EducationId);
             var status = result.StatusCode;
         }

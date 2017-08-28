@@ -132,7 +132,7 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[52];
+            _typeNameTable = new string[57];
             _typeNameTable[0] = "HoGentApp.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -146,47 +146,52 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
             _typeNameTable[10] = "HoGentApp.Views.Admin.Views.GebeurtenisAdmin";
             _typeNameTable[11] = "HoGentApp.Views.Admin.Views.StudentAdmin";
             _typeNameTable[12] = "HoGentApp.Views.CampusPaginas.Schoonmeersen";
-            _typeNameTable[13] = "HoGentApp.Views.Campussen";
-            _typeNameTable[14] = "HoGentApp.ViewModels.NieuwsFeedsViewModel";
-            _typeNameTable[15] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Article>";
-            _typeNameTable[16] = "HoGentApp.ViewModels.NotificationBase";
-            _typeNameTable[17] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Article>";
-            _typeNameTable[18] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Article>";
-            _typeNameTable[19] = "HoGentApp.models.Article";
-            _typeNameTable[20] = "Int32";
-            _typeNameTable[21] = "String";
-            _typeNameTable[22] = "HoGentApp.Views.NieuwsFeeds";
-            _typeNameTable[23] = "HoGentApp.ViewModels.EducationViewModel";
-            _typeNameTable[24] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Education>";
-            _typeNameTable[25] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Education>";
-            _typeNameTable[26] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Education>";
-            _typeNameTable[27] = "HoGentApp.models.Education";
-            _typeNameTable[28] = "Boolean";
-            _typeNameTable[29] = "HoGentApp.Views.Opleidingen";
-            _typeNameTable[30] = "HoGentApp.Views.OpleidingPaginas.EducationDetail";
-            _typeNameTable[31] = "HoGentApp.Views.OpleidingPaginas.Bedrijfsmanagement";
-            _typeNameTable[32] = "HoGentApp.Views.OpleidingPaginas.Officemanagement";
-            _typeNameTable[33] = "HoGentApp.Views.OpleidingPaginas.Retailmanagement";
-            _typeNameTable[34] = "HoGentApp.Views.OpleidingPaginas.ToegepasteInformatica";
-            _typeNameTable[35] = "HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel";
-            _typeNameTable[36] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Gebeurtenis>";
-            _typeNameTable[37] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Gebeurtenis>";
-            _typeNameTable[38] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Gebeurtenis>";
-            _typeNameTable[39] = "HoGentApp.models.Gebeurtenis";
-            _typeNameTable[40] = "System.DateTime";
-            _typeNameTable[41] = "System.ValueType";
-            _typeNameTable[42] = "HoGentApp.models.Campus";
-            _typeNameTable[43] = "HoGentApp.Views.ToekomstigeActiviteiten";
-            _typeNameTable[44] = "HoGentApp.ViewModels.StudentViewModel";
-            _typeNameTable[45] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Student>";
-            _typeNameTable[46] = "System.Collections.Generic.List`1<HoGentApp.models.Education>";
-            _typeNameTable[47] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Student>";
-            _typeNameTable[48] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Student>";
-            _typeNameTable[49] = "HoGentApp.models.Student";
-            _typeNameTable[50] = "HoGentApp.Utility.RelayCommand";
-            _typeNameTable[51] = "HoGentApp.Views.Voorstelling";
+            _typeNameTable[13] = "HoGentApp.ViewModels.CampusViewModel";
+            _typeNameTable[14] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Campus>";
+            _typeNameTable[15] = "HoGentApp.ViewModels.NotificationBase";
+            _typeNameTable[16] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Campus>";
+            _typeNameTable[17] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Campus>";
+            _typeNameTable[18] = "HoGentApp.models.Campus";
+            _typeNameTable[19] = "Int32";
+            _typeNameTable[20] = "String";
+            _typeNameTable[21] = "HoGentApp.models.Adres";
+            _typeNameTable[22] = "Boolean";
+            _typeNameTable[23] = "HoGentApp.Views.Campussen";
+            _typeNameTable[24] = "HoGentApp.ViewModels.NieuwsFeedsViewModel";
+            _typeNameTable[25] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Article>";
+            _typeNameTable[26] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Article>";
+            _typeNameTable[27] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Article>";
+            _typeNameTable[28] = "HoGentApp.models.Article";
+            _typeNameTable[29] = "HoGentApp.Views.NieuwsFeeds";
+            _typeNameTable[30] = "HoGentApp.ViewModels.EducationViewModel";
+            _typeNameTable[31] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Education>";
+            _typeNameTable[32] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Education>";
+            _typeNameTable[33] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Education>";
+            _typeNameTable[34] = "HoGentApp.models.Education";
+            _typeNameTable[35] = "HoGentApp.Views.Opleidingen";
+            _typeNameTable[36] = "HoGentApp.Views.OpleidingPaginas.EducationDetail";
+            _typeNameTable[37] = "HoGentApp.Views.OpleidingPaginas.Bedrijfsmanagement";
+            _typeNameTable[38] = "HoGentApp.Views.OpleidingPaginas.Officemanagement";
+            _typeNameTable[39] = "HoGentApp.Views.OpleidingPaginas.Retailmanagement";
+            _typeNameTable[40] = "HoGentApp.Views.OpleidingPaginas.ToegepasteInformatica";
+            _typeNameTable[41] = "HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel";
+            _typeNameTable[42] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Gebeurtenis>";
+            _typeNameTable[43] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Gebeurtenis>";
+            _typeNameTable[44] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Gebeurtenis>";
+            _typeNameTable[45] = "HoGentApp.models.Gebeurtenis";
+            _typeNameTable[46] = "System.DateTime";
+            _typeNameTable[47] = "System.ValueType";
+            _typeNameTable[48] = "HoGentApp.Views.ToekomstigeActiviteiten";
+            _typeNameTable[49] = "HoGentApp.ViewModels.StudentViewModel";
+            _typeNameTable[50] = "HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Student>";
+            _typeNameTable[51] = "System.Collections.Generic.List`1<HoGentApp.models.Education>";
+            _typeNameTable[52] = "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Student>";
+            _typeNameTable[53] = "System.Collections.ObjectModel.Collection`1<HoGentApp.models.Student>";
+            _typeNameTable[54] = "HoGentApp.models.Student";
+            _typeNameTable[55] = "HoGentApp.Utility.RelayCommand";
+            _typeNameTable[56] = "HoGentApp.Views.Voorstelling";
 
-            _typeTable = new global::System.Type[52];
+            _typeTable = new global::System.Type[57];
             _typeTable[0] = typeof(global::HoGentApp.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -200,45 +205,50 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
             _typeTable[10] = typeof(global::HoGentApp.Views.Admin.Views.GebeurtenisAdmin);
             _typeTable[11] = typeof(global::HoGentApp.Views.Admin.Views.StudentAdmin);
             _typeTable[12] = typeof(global::HoGentApp.Views.CampusPaginas.Schoonmeersen);
-            _typeTable[13] = typeof(global::HoGentApp.Views.Campussen);
-            _typeTable[14] = typeof(global::HoGentApp.ViewModels.NieuwsFeedsViewModel);
-            _typeTable[15] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Article>);
-            _typeTable[16] = typeof(global::HoGentApp.ViewModels.NotificationBase);
-            _typeTable[17] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Article>);
-            _typeTable[18] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Article>);
-            _typeTable[19] = typeof(global::HoGentApp.models.Article);
-            _typeTable[20] = typeof(global::System.Int32);
-            _typeTable[21] = typeof(global::System.String);
-            _typeTable[22] = typeof(global::HoGentApp.Views.NieuwsFeeds);
-            _typeTable[23] = typeof(global::HoGentApp.ViewModels.EducationViewModel);
-            _typeTable[24] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Education>);
-            _typeTable[25] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Education>);
-            _typeTable[26] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Education>);
-            _typeTable[27] = typeof(global::HoGentApp.models.Education);
-            _typeTable[28] = typeof(global::System.Boolean);
-            _typeTable[29] = typeof(global::HoGentApp.Views.Opleidingen);
-            _typeTable[30] = typeof(global::HoGentApp.Views.OpleidingPaginas.EducationDetail);
-            _typeTable[31] = typeof(global::HoGentApp.Views.OpleidingPaginas.Bedrijfsmanagement);
-            _typeTable[32] = typeof(global::HoGentApp.Views.OpleidingPaginas.Officemanagement);
-            _typeTable[33] = typeof(global::HoGentApp.Views.OpleidingPaginas.Retailmanagement);
-            _typeTable[34] = typeof(global::HoGentApp.Views.OpleidingPaginas.ToegepasteInformatica);
-            _typeTable[35] = typeof(global::HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel);
-            _typeTable[36] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Gebeurtenis>);
-            _typeTable[37] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Gebeurtenis>);
-            _typeTable[38] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Gebeurtenis>);
-            _typeTable[39] = typeof(global::HoGentApp.models.Gebeurtenis);
-            _typeTable[40] = typeof(global::System.DateTime);
-            _typeTable[41] = typeof(global::System.ValueType);
-            _typeTable[42] = typeof(global::HoGentApp.models.Campus);
-            _typeTable[43] = typeof(global::HoGentApp.Views.ToekomstigeActiviteiten);
-            _typeTable[44] = typeof(global::HoGentApp.ViewModels.StudentViewModel);
-            _typeTable[45] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Student>);
-            _typeTable[46] = typeof(global::System.Collections.Generic.List<global::HoGentApp.models.Education>);
-            _typeTable[47] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Student>);
-            _typeTable[48] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Student>);
-            _typeTable[49] = typeof(global::HoGentApp.models.Student);
-            _typeTable[50] = typeof(global::HoGentApp.Utility.RelayCommand);
-            _typeTable[51] = typeof(global::HoGentApp.Views.Voorstelling);
+            _typeTable[13] = typeof(global::HoGentApp.ViewModels.CampusViewModel);
+            _typeTable[14] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Campus>);
+            _typeTable[15] = typeof(global::HoGentApp.ViewModels.NotificationBase);
+            _typeTable[16] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Campus>);
+            _typeTable[17] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Campus>);
+            _typeTable[18] = typeof(global::HoGentApp.models.Campus);
+            _typeTable[19] = typeof(global::System.Int32);
+            _typeTable[20] = typeof(global::System.String);
+            _typeTable[21] = typeof(global::HoGentApp.models.Adres);
+            _typeTable[22] = typeof(global::System.Boolean);
+            _typeTable[23] = typeof(global::HoGentApp.Views.Campussen);
+            _typeTable[24] = typeof(global::HoGentApp.ViewModels.NieuwsFeedsViewModel);
+            _typeTable[25] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Article>);
+            _typeTable[26] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Article>);
+            _typeTable[27] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Article>);
+            _typeTable[28] = typeof(global::HoGentApp.models.Article);
+            _typeTable[29] = typeof(global::HoGentApp.Views.NieuwsFeeds);
+            _typeTable[30] = typeof(global::HoGentApp.ViewModels.EducationViewModel);
+            _typeTable[31] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Education>);
+            _typeTable[32] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Education>);
+            _typeTable[33] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Education>);
+            _typeTable[34] = typeof(global::HoGentApp.models.Education);
+            _typeTable[35] = typeof(global::HoGentApp.Views.Opleidingen);
+            _typeTable[36] = typeof(global::HoGentApp.Views.OpleidingPaginas.EducationDetail);
+            _typeTable[37] = typeof(global::HoGentApp.Views.OpleidingPaginas.Bedrijfsmanagement);
+            _typeTable[38] = typeof(global::HoGentApp.Views.OpleidingPaginas.Officemanagement);
+            _typeTable[39] = typeof(global::HoGentApp.Views.OpleidingPaginas.Retailmanagement);
+            _typeTable[40] = typeof(global::HoGentApp.Views.OpleidingPaginas.ToegepasteInformatica);
+            _typeTable[41] = typeof(global::HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel);
+            _typeTable[42] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Gebeurtenis>);
+            _typeTable[43] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Gebeurtenis>);
+            _typeTable[44] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Gebeurtenis>);
+            _typeTable[45] = typeof(global::HoGentApp.models.Gebeurtenis);
+            _typeTable[46] = typeof(global::System.DateTime);
+            _typeTable[47] = typeof(global::System.ValueType);
+            _typeTable[48] = typeof(global::HoGentApp.Views.ToekomstigeActiviteiten);
+            _typeTable[49] = typeof(global::HoGentApp.ViewModels.StudentViewModel);
+            _typeTable[50] = typeof(global::HoGentApp.ViewModels.NotificationBase<global::HoGentApp.models.Student>);
+            _typeTable[51] = typeof(global::System.Collections.Generic.List<global::HoGentApp.models.Education>);
+            _typeTable[52] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Student>);
+            _typeTable[53] = typeof(global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Student>);
+            _typeTable[54] = typeof(global::HoGentApp.models.Student);
+            _typeTable[55] = typeof(global::HoGentApp.Utility.RelayCommand);
+            _typeTable[56] = typeof(global::HoGentApp.Views.Voorstelling);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -283,84 +293,100 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
         private object Activate_10_GebeurtenisAdmin() { return new global::HoGentApp.Views.Admin.Views.GebeurtenisAdmin(); }
         private object Activate_11_StudentAdmin() { return new global::HoGentApp.Views.Admin.Views.StudentAdmin(); }
         private object Activate_12_Schoonmeersen() { return new global::HoGentApp.Views.CampusPaginas.Schoonmeersen(); }
-        private object Activate_13_Campussen() { return new global::HoGentApp.Views.Campussen(); }
-        private object Activate_14_NieuwsFeedsViewModel() { return new global::HoGentApp.ViewModels.NieuwsFeedsViewModel(); }
-        private object Activate_16_NotificationBase() { return new global::HoGentApp.ViewModels.NotificationBase(); }
-        private object Activate_17_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Article>(); }
-        private object Activate_18_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Article>(); }
-        private object Activate_19_Article() { return new global::HoGentApp.models.Article(); }
-        private object Activate_22_NieuwsFeeds() { return new global::HoGentApp.Views.NieuwsFeeds(); }
-        private object Activate_23_EducationViewModel() { return new global::HoGentApp.ViewModels.EducationViewModel(); }
-        private object Activate_25_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Education>(); }
-        private object Activate_26_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Education>(); }
-        private object Activate_27_Education() { return new global::HoGentApp.models.Education(); }
-        private object Activate_29_Opleidingen() { return new global::HoGentApp.Views.Opleidingen(); }
-        private object Activate_30_EducationDetail() { return new global::HoGentApp.Views.OpleidingPaginas.EducationDetail(); }
-        private object Activate_31_Bedrijfsmanagement() { return new global::HoGentApp.Views.OpleidingPaginas.Bedrijfsmanagement(); }
-        private object Activate_32_Officemanagement() { return new global::HoGentApp.Views.OpleidingPaginas.Officemanagement(); }
-        private object Activate_33_Retailmanagement() { return new global::HoGentApp.Views.OpleidingPaginas.Retailmanagement(); }
-        private object Activate_34_ToegepasteInformatica() { return new global::HoGentApp.Views.OpleidingPaginas.ToegepasteInformatica(); }
-        private object Activate_35_ToekomstigeActiviteitenViewModel() { return new global::HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel(); }
-        private object Activate_37_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Gebeurtenis>(); }
-        private object Activate_38_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Gebeurtenis>(); }
-        private object Activate_39_Gebeurtenis() { return new global::HoGentApp.models.Gebeurtenis(); }
-        private object Activate_42_Campus() { return new global::HoGentApp.models.Campus(); }
-        private object Activate_43_ToekomstigeActiviteiten() { return new global::HoGentApp.Views.ToekomstigeActiviteiten(); }
-        private object Activate_44_StudentViewModel() { return new global::HoGentApp.ViewModels.StudentViewModel(); }
-        private object Activate_46_List() { return new global::System.Collections.Generic.List<global::HoGentApp.models.Education>(); }
-        private object Activate_47_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Student>(); }
-        private object Activate_48_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Student>(); }
-        private object Activate_49_Student() { return new global::HoGentApp.models.Student(); }
-        private object Activate_51_Voorstelling() { return new global::HoGentApp.Views.Voorstelling(); }
-        private void VectorAdd_17_ObservableCollection(object instance, object item)
+        private object Activate_13_CampusViewModel() { return new global::HoGentApp.ViewModels.CampusViewModel(); }
+        private object Activate_15_NotificationBase() { return new global::HoGentApp.ViewModels.NotificationBase(); }
+        private object Activate_16_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Campus>(); }
+        private object Activate_17_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Campus>(); }
+        private object Activate_18_Campus() { return new global::HoGentApp.models.Campus(); }
+        private object Activate_21_Adres() { return new global::HoGentApp.models.Adres(); }
+        private object Activate_23_Campussen() { return new global::HoGentApp.Views.Campussen(); }
+        private object Activate_24_NieuwsFeedsViewModel() { return new global::HoGentApp.ViewModels.NieuwsFeedsViewModel(); }
+        private object Activate_26_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Article>(); }
+        private object Activate_27_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Article>(); }
+        private object Activate_28_Article() { return new global::HoGentApp.models.Article(); }
+        private object Activate_29_NieuwsFeeds() { return new global::HoGentApp.Views.NieuwsFeeds(); }
+        private object Activate_30_EducationViewModel() { return new global::HoGentApp.ViewModels.EducationViewModel(); }
+        private object Activate_32_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Education>(); }
+        private object Activate_33_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Education>(); }
+        private object Activate_34_Education() { return new global::HoGentApp.models.Education(); }
+        private object Activate_35_Opleidingen() { return new global::HoGentApp.Views.Opleidingen(); }
+        private object Activate_36_EducationDetail() { return new global::HoGentApp.Views.OpleidingPaginas.EducationDetail(); }
+        private object Activate_37_Bedrijfsmanagement() { return new global::HoGentApp.Views.OpleidingPaginas.Bedrijfsmanagement(); }
+        private object Activate_38_Officemanagement() { return new global::HoGentApp.Views.OpleidingPaginas.Officemanagement(); }
+        private object Activate_39_Retailmanagement() { return new global::HoGentApp.Views.OpleidingPaginas.Retailmanagement(); }
+        private object Activate_40_ToegepasteInformatica() { return new global::HoGentApp.Views.OpleidingPaginas.ToegepasteInformatica(); }
+        private object Activate_41_ToekomstigeActiviteitenViewModel() { return new global::HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel(); }
+        private object Activate_43_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Gebeurtenis>(); }
+        private object Activate_44_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Gebeurtenis>(); }
+        private object Activate_45_Gebeurtenis() { return new global::HoGentApp.models.Gebeurtenis(); }
+        private object Activate_48_ToekomstigeActiviteiten() { return new global::HoGentApp.Views.ToekomstigeActiviteiten(); }
+        private object Activate_49_StudentViewModel() { return new global::HoGentApp.ViewModels.StudentViewModel(); }
+        private object Activate_51_List() { return new global::System.Collections.Generic.List<global::HoGentApp.models.Education>(); }
+        private object Activate_52_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Student>(); }
+        private object Activate_53_Collection() { return new global::System.Collections.ObjectModel.Collection<global::HoGentApp.models.Student>(); }
+        private object Activate_54_Student() { return new global::HoGentApp.models.Student(); }
+        private object Activate_56_Voorstelling() { return new global::HoGentApp.Views.Voorstelling(); }
+        private void VectorAdd_16_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Campus>)instance;
+            var newItem = (global::HoGentApp.models.Campus)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_17_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Campus>)instance;
+            var newItem = (global::HoGentApp.models.Campus)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_26_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Article>)instance;
             var newItem = (global::HoGentApp.models.Article)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_18_Collection(object instance, object item)
+        private void VectorAdd_27_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Article>)instance;
             var newItem = (global::HoGentApp.models.Article)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_25_ObservableCollection(object instance, object item)
+        private void VectorAdd_32_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Education>)instance;
             var newItem = (global::HoGentApp.models.Education)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_26_Collection(object instance, object item)
+        private void VectorAdd_33_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Education>)instance;
             var newItem = (global::HoGentApp.models.Education)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_37_ObservableCollection(object instance, object item)
+        private void VectorAdd_43_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Gebeurtenis>)instance;
             var newItem = (global::HoGentApp.models.Gebeurtenis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_38_Collection(object instance, object item)
+        private void VectorAdd_44_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Gebeurtenis>)instance;
             var newItem = (global::HoGentApp.models.Gebeurtenis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_46_List(object instance, object item)
+        private void VectorAdd_51_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Education>)instance;
             var newItem = (global::HoGentApp.models.Education)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_47_ObservableCollection(object instance, object item)
+        private void VectorAdd_52_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Student>)instance;
             var newItem = (global::HoGentApp.models.Student)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_48_Collection(object instance, object item)
+        private void VectorAdd_53_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::HoGentApp.models.Student>)instance;
             var newItem = (global::HoGentApp.models.Student)item;
@@ -459,51 +485,109 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 13:   //  HoGentApp.Views.Campussen
-                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_Campussen;
+            case 13:   //  HoGentApp.ViewModels.CampusViewModel
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Campus>"));
+                userType.Activator = Activate_13_CampusViewModel;
+                userType.AddMemberName("Campussen");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  HoGentApp.ViewModels.NieuwsFeedsViewModel
-                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Article>"));
-                userType.Activator = Activate_14_NieuwsFeedsViewModel;
-                userType.AddMemberName("NieuwsFeeds");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 15:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Article>
+            case 14:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Campus>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  HoGentApp.ViewModels.NotificationBase
+            case 15:   //  HoGentApp.ViewModels.NotificationBase
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_16_NotificationBase;
+                userType.Activator = Activate_15_NotificationBase;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Article>
-                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HoGentApp.models.Article>"));
-                userType.CollectionAdd = VectorAdd_17_ObservableCollection;
+            case 16:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Campus>
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HoGentApp.models.Campus>"));
+                userType.CollectionAdd = VectorAdd_16_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 18:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Article>
+            case 17:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Campus>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_18_Collection;
-                userType.CollectionAdd = VectorAdd_18_Collection;
+                userType.Activator = Activate_17_Collection;
+                userType.CollectionAdd = VectorAdd_17_Collection;
                 xamlType = userType;
                 break;
 
-            case 19:   //  HoGentApp.models.Article
+            case 18:   //  HoGentApp.models.Campus
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_19_Article;
+                userType.Activator = Activate_18_Campus;
+                userType.AddMemberName("CampusId");
+                userType.AddMemberName("Name");
+                userType.AddMemberName("Adres");
+                userType.AddMemberName("IsChecked");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  Int32
+                xamlType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 20:   //  String
+                xamlType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 21:   //  HoGentApp.models.Adres
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 22:   //  Boolean
+                xamlType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 23:   //  HoGentApp.Views.Campussen
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_23_Campussen;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  HoGentApp.ViewModels.NieuwsFeedsViewModel
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Article>"));
+                userType.Activator = Activate_24_NieuwsFeedsViewModel;
+                userType.AddMemberName("NieuwsFeeds");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Article>
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase"));
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 26:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Article>
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HoGentApp.models.Article>"));
+                userType.CollectionAdd = VectorAdd_26_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 27:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Article>
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_27_Collection;
+                userType.CollectionAdd = VectorAdd_27_Collection;
+                xamlType = userType;
+                break;
+
+            case 28:   //  HoGentApp.models.Article
+                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_28_Article;
                 userType.AddMemberName("ArticleId");
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Description");
@@ -511,52 +595,44 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 20:   //  Int32
-                xamlType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 21:   //  String
-                xamlType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 22:   //  HoGentApp.Views.NieuwsFeeds
+            case 29:   //  HoGentApp.Views.NieuwsFeeds
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_NieuwsFeeds;
+                userType.Activator = Activate_29_NieuwsFeeds;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  HoGentApp.ViewModels.EducationViewModel
+            case 30:   //  HoGentApp.ViewModels.EducationViewModel
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Education>"));
-                userType.Activator = Activate_23_EducationViewModel;
+                userType.Activator = Activate_30_EducationViewModel;
                 userType.AddMemberName("Educations");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Education>
+            case 31:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Education>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Education>
+            case 32:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Education>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HoGentApp.models.Education>"));
-                userType.CollectionAdd = VectorAdd_25_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_32_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 26:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Education>
+            case 33:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Education>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_26_Collection;
-                userType.CollectionAdd = VectorAdd_26_Collection;
+                userType.Activator = Activate_33_Collection;
+                userType.CollectionAdd = VectorAdd_33_Collection;
                 xamlType = userType;
                 break;
 
-            case 27:   //  HoGentApp.models.Education
+            case 34:   //  HoGentApp.models.Education
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_27_Education;
+                userType.Activator = Activate_34_Education;
                 userType.AddMemberName("EducationId");
                 userType.AddMemberName("Name");
                 userType.AddMemberName("Description");
@@ -567,20 +643,16 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 28:   //  Boolean
-                xamlType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 29:   //  HoGentApp.Views.Opleidingen
+            case 35:   //  HoGentApp.Views.Opleidingen
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_29_Opleidingen;
+                userType.Activator = Activate_35_Opleidingen;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  HoGentApp.Views.OpleidingPaginas.EducationDetail
+            case 36:   //  HoGentApp.Views.OpleidingPaginas.EducationDetail
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_30_EducationDetail;
+                userType.Activator = Activate_36_EducationDetail;
                 userType.AddMemberName("EducationName");
                 userType.AddMemberName("Description");
                 userType.AddMemberName("ImageSource");
@@ -588,65 +660,65 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 31:   //  HoGentApp.Views.OpleidingPaginas.Bedrijfsmanagement
+            case 37:   //  HoGentApp.Views.OpleidingPaginas.Bedrijfsmanagement
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_31_Bedrijfsmanagement;
+                userType.Activator = Activate_37_Bedrijfsmanagement;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  HoGentApp.Views.OpleidingPaginas.Officemanagement
+            case 38:   //  HoGentApp.Views.OpleidingPaginas.Officemanagement
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_32_Officemanagement;
+                userType.Activator = Activate_38_Officemanagement;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  HoGentApp.Views.OpleidingPaginas.Retailmanagement
+            case 39:   //  HoGentApp.Views.OpleidingPaginas.Retailmanagement
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_33_Retailmanagement;
+                userType.Activator = Activate_39_Retailmanagement;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  HoGentApp.Views.OpleidingPaginas.ToegepasteInformatica
+            case 40:   //  HoGentApp.Views.OpleidingPaginas.ToegepasteInformatica
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_34_ToegepasteInformatica;
+                userType.Activator = Activate_40_ToegepasteInformatica;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 35:   //  HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel
+            case 41:   //  HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Gebeurtenis>"));
-                userType.Activator = Activate_35_ToekomstigeActiviteitenViewModel;
+                userType.Activator = Activate_41_ToekomstigeActiviteitenViewModel;
                 userType.AddMemberName("ToekomstigeActiviteiten");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Gebeurtenis>
+            case 42:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Gebeurtenis>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 37:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Gebeurtenis>
+            case 43:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Gebeurtenis>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HoGentApp.models.Gebeurtenis>"));
-                userType.CollectionAdd = VectorAdd_37_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_43_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 38:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Gebeurtenis>
+            case 44:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Gebeurtenis>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_38_Collection;
-                userType.CollectionAdd = VectorAdd_38_Collection;
+                userType.Activator = Activate_44_Collection;
+                userType.CollectionAdd = VectorAdd_44_Collection;
                 xamlType = userType;
                 break;
 
-            case 39:   //  HoGentApp.models.Gebeurtenis
+            case 45:   //  HoGentApp.models.Gebeurtenis
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_39_Gebeurtenis;
+                userType.Activator = Activate_45_Gebeurtenis;
                 userType.AddMemberName("GebeurtenisId");
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Description");
@@ -656,34 +728,27 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 40:   //  System.DateTime
+            case 46:   //  System.DateTime
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 41:   //  System.ValueType
+            case 47:   //  System.ValueType
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 42:   //  HoGentApp.models.Campus
-                userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 43:   //  HoGentApp.Views.ToekomstigeActiviteiten
+            case 48:   //  HoGentApp.Views.ToekomstigeActiviteiten
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_43_ToekomstigeActiviteiten;
+                userType.Activator = Activate_48_ToekomstigeActiviteiten;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 44:   //  HoGentApp.ViewModels.StudentViewModel
+            case 49:   //  HoGentApp.ViewModels.StudentViewModel
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Student>"));
-                userType.Activator = Activate_44_StudentViewModel;
+                userType.Activator = Activate_49_StudentViewModel;
                 userType.AddMemberName("FirstName");
                 userType.AddMemberName("LastName");
                 userType.AddMemberName("Email");
@@ -696,36 +761,36 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 45:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Student>
+            case 50:   //  HoGentApp.ViewModels.NotificationBase`1<HoGentApp.models.Student>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("HoGentApp.ViewModels.NotificationBase"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 46:   //  System.Collections.Generic.List`1<HoGentApp.models.Education>
+            case 51:   //  System.Collections.Generic.List`1<HoGentApp.models.Education>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_46_List;
+                userType.CollectionAdd = VectorAdd_51_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 47:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Student>
+            case 52:   //  System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Student>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<HoGentApp.models.Student>"));
-                userType.CollectionAdd = VectorAdd_47_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_52_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 48:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Student>
+            case 53:   //  System.Collections.ObjectModel.Collection`1<HoGentApp.models.Student>
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_48_Collection;
-                userType.CollectionAdd = VectorAdd_48_Collection;
+                userType.Activator = Activate_53_Collection;
+                userType.CollectionAdd = VectorAdd_53_Collection;
                 xamlType = userType;
                 break;
 
-            case 49:   //  HoGentApp.models.Student
+            case 54:   //  HoGentApp.models.Student
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_49_Student;
+                userType.Activator = Activate_54_Student;
                 userType.AddMemberName("StudentId");
                 userType.AddMemberName("FirstName");
                 userType.AddMemberName("LastName");
@@ -737,16 +802,16 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 50:   //  HoGentApp.Utility.RelayCommand
+            case 55:   //  HoGentApp.Utility.RelayCommand
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 51:   //  HoGentApp.Views.Voorstelling
+            case 56:   //  HoGentApp.Views.Voorstelling
                 userType = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_51_Voorstelling;
+                userType.Activator = Activate_56_Voorstelling;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -755,347 +820,397 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
         }
 
 
-        private object get_0_NieuwsFeedsViewModel_NieuwsFeeds(object instance)
+        private object get_0_CampusViewModel_Campussen(object instance)
+        {
+            var that = (global::HoGentApp.ViewModels.CampusViewModel)instance;
+            return that.Campussen;
+        }
+        private void set_0_CampusViewModel_Campussen(object instance, object Value)
+        {
+            var that = (global::HoGentApp.ViewModels.CampusViewModel)instance;
+            that.Campussen = (global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Campus>)Value;
+        }
+        private object get_1_Campus_CampusId(object instance)
+        {
+            var that = (global::HoGentApp.models.Campus)instance;
+            return that.CampusId;
+        }
+        private void set_1_Campus_CampusId(object instance, object Value)
+        {
+            var that = (global::HoGentApp.models.Campus)instance;
+            that.CampusId = (global::System.Int32)Value;
+        }
+        private object get_2_Campus_Name(object instance)
+        {
+            var that = (global::HoGentApp.models.Campus)instance;
+            return that.Name;
+        }
+        private void set_2_Campus_Name(object instance, object Value)
+        {
+            var that = (global::HoGentApp.models.Campus)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_3_Campus_Adres(object instance)
+        {
+            var that = (global::HoGentApp.models.Campus)instance;
+            return that.Adres;
+        }
+        private void set_3_Campus_Adres(object instance, object Value)
+        {
+            var that = (global::HoGentApp.models.Campus)instance;
+            that.Adres = (global::HoGentApp.models.Adres)Value;
+        }
+        private object get_4_Campus_IsChecked(object instance)
+        {
+            var that = (global::HoGentApp.models.Campus)instance;
+            return that.IsChecked;
+        }
+        private void set_4_Campus_IsChecked(object instance, object Value)
+        {
+            var that = (global::HoGentApp.models.Campus)instance;
+            that.IsChecked = (global::System.Boolean)Value;
+        }
+        private object get_5_NieuwsFeedsViewModel_NieuwsFeeds(object instance)
         {
             var that = (global::HoGentApp.ViewModels.NieuwsFeedsViewModel)instance;
             return that.NieuwsFeeds;
         }
-        private void set_0_NieuwsFeedsViewModel_NieuwsFeeds(object instance, object Value)
+        private void set_5_NieuwsFeedsViewModel_NieuwsFeeds(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.NieuwsFeedsViewModel)instance;
             that.NieuwsFeeds = (global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Article>)Value;
         }
-        private object get_1_Article_ArticleId(object instance)
+        private object get_6_Article_ArticleId(object instance)
         {
             var that = (global::HoGentApp.models.Article)instance;
             return that.ArticleId;
         }
-        private void set_1_Article_ArticleId(object instance, object Value)
+        private void set_6_Article_ArticleId(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Article)instance;
             that.ArticleId = (global::System.Int32)Value;
         }
-        private object get_2_Article_Title(object instance)
+        private object get_7_Article_Title(object instance)
         {
             var that = (global::HoGentApp.models.Article)instance;
             return that.Title;
         }
-        private void set_2_Article_Title(object instance, object Value)
+        private void set_7_Article_Title(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Article)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_3_Article_Description(object instance)
+        private object get_8_Article_Description(object instance)
         {
             var that = (global::HoGentApp.models.Article)instance;
             return that.Description;
         }
-        private void set_3_Article_Description(object instance, object Value)
+        private void set_8_Article_Description(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Article)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_4_EducationViewModel_Educations(object instance)
+        private object get_9_EducationViewModel_Educations(object instance)
         {
             var that = (global::HoGentApp.ViewModels.EducationViewModel)instance;
             return that.Educations;
         }
-        private void set_4_EducationViewModel_Educations(object instance, object Value)
+        private void set_9_EducationViewModel_Educations(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.EducationViewModel)instance;
             that.Educations = (global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Education>)Value;
         }
-        private object get_5_Education_EducationId(object instance)
+        private object get_10_Education_EducationId(object instance)
         {
             var that = (global::HoGentApp.models.Education)instance;
             return that.EducationId;
         }
-        private void set_5_Education_EducationId(object instance, object Value)
+        private void set_10_Education_EducationId(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Education)instance;
             that.EducationId = (global::System.String)Value;
         }
-        private object get_6_Education_Name(object instance)
+        private object get_11_Education_Name(object instance)
         {
             var that = (global::HoGentApp.models.Education)instance;
             return that.Name;
         }
-        private void set_6_Education_Name(object instance, object Value)
+        private void set_11_Education_Name(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Education)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_7_Education_Description(object instance)
+        private object get_12_Education_Description(object instance)
         {
             var that = (global::HoGentApp.models.Education)instance;
             return that.Description;
         }
-        private void set_7_Education_Description(object instance, object Value)
+        private void set_12_Education_Description(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Education)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_8_Education_DescriptionShort(object instance)
+        private object get_13_Education_DescriptionShort(object instance)
         {
             var that = (global::HoGentApp.models.Education)instance;
             return that.DescriptionShort;
         }
-        private void set_8_Education_DescriptionShort(object instance, object Value)
+        private void set_13_Education_DescriptionShort(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Education)instance;
             that.DescriptionShort = (global::System.String)Value;
         }
-        private object get_9_Education_IsChecked(object instance)
+        private object get_14_Education_IsChecked(object instance)
         {
             var that = (global::HoGentApp.models.Education)instance;
             return that.IsChecked;
         }
-        private void set_9_Education_IsChecked(object instance, object Value)
+        private void set_14_Education_IsChecked(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Education)instance;
             that.IsChecked = (global::System.Boolean)Value;
         }
-        private object get_10_Education_GetImageSource(object instance)
+        private object get_15_Education_GetImageSource(object instance)
         {
             var that = (global::HoGentApp.models.Education)instance;
             return that.GetImageSource;
         }
-        private object get_11_EducationDetail_EducationName(object instance)
+        private object get_16_EducationDetail_EducationName(object instance)
         {
             var that = (global::HoGentApp.Views.OpleidingPaginas.EducationDetail)instance;
             return that.EducationName;
         }
-        private void set_11_EducationDetail_EducationName(object instance, object Value)
+        private void set_16_EducationDetail_EducationName(object instance, object Value)
         {
             var that = (global::HoGentApp.Views.OpleidingPaginas.EducationDetail)instance;
             that.EducationName = (global::System.String)Value;
         }
-        private object get_12_EducationDetail_Description(object instance)
+        private object get_17_EducationDetail_Description(object instance)
         {
             var that = (global::HoGentApp.Views.OpleidingPaginas.EducationDetail)instance;
             return that.Description;
         }
-        private void set_12_EducationDetail_Description(object instance, object Value)
+        private void set_17_EducationDetail_Description(object instance, object Value)
         {
             var that = (global::HoGentApp.Views.OpleidingPaginas.EducationDetail)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_13_EducationDetail_ImageSource(object instance)
+        private object get_18_EducationDetail_ImageSource(object instance)
         {
             var that = (global::HoGentApp.Views.OpleidingPaginas.EducationDetail)instance;
             return that.ImageSource;
         }
-        private void set_13_EducationDetail_ImageSource(object instance, object Value)
+        private void set_18_EducationDetail_ImageSource(object instance, object Value)
         {
             var that = (global::HoGentApp.Views.OpleidingPaginas.EducationDetail)instance;
             that.ImageSource = (global::System.String)Value;
         }
-        private object get_14_ToekomstigeActiviteitenViewModel_ToekomstigeActiviteiten(object instance)
+        private object get_19_ToekomstigeActiviteitenViewModel_ToekomstigeActiviteiten(object instance)
         {
             var that = (global::HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel)instance;
             return that.ToekomstigeActiviteiten;
         }
-        private void set_14_ToekomstigeActiviteitenViewModel_ToekomstigeActiviteiten(object instance, object Value)
+        private void set_19_ToekomstigeActiviteitenViewModel_ToekomstigeActiviteiten(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel)instance;
             that.ToekomstigeActiviteiten = (global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Gebeurtenis>)Value;
         }
-        private object get_15_Gebeurtenis_GebeurtenisId(object instance)
+        private object get_20_Gebeurtenis_GebeurtenisId(object instance)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             return that.GebeurtenisId;
         }
-        private void set_15_Gebeurtenis_GebeurtenisId(object instance, object Value)
+        private void set_20_Gebeurtenis_GebeurtenisId(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             that.GebeurtenisId = (global::System.Int32)Value;
         }
-        private object get_16_Gebeurtenis_Title(object instance)
+        private object get_21_Gebeurtenis_Title(object instance)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             return that.Title;
         }
-        private void set_16_Gebeurtenis_Title(object instance, object Value)
+        private void set_21_Gebeurtenis_Title(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_17_Gebeurtenis_Description(object instance)
+        private object get_22_Gebeurtenis_Description(object instance)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             return that.Description;
         }
-        private void set_17_Gebeurtenis_Description(object instance, object Value)
+        private void set_22_Gebeurtenis_Description(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_18_Gebeurtenis_Date(object instance)
+        private object get_23_Gebeurtenis_Date(object instance)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             return that.Date;
         }
-        private void set_18_Gebeurtenis_Date(object instance, object Value)
+        private void set_23_Gebeurtenis_Date(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             that.Date = (global::System.DateTime)Value;
         }
-        private object get_19_Gebeurtenis_Campus(object instance)
+        private object get_24_Gebeurtenis_Campus(object instance)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             return that.Campus;
         }
-        private void set_19_Gebeurtenis_Campus(object instance, object Value)
+        private void set_24_Gebeurtenis_Campus(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Gebeurtenis)instance;
             that.Campus = (global::HoGentApp.models.Campus)Value;
         }
-        private object get_20_StudentViewModel_FirstName(object instance)
+        private object get_25_StudentViewModel_FirstName(object instance)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             return that.FirstName;
         }
-        private void set_20_StudentViewModel_FirstName(object instance, object Value)
+        private void set_25_StudentViewModel_FirstName(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             that.FirstName = (global::System.String)Value;
         }
-        private object get_21_StudentViewModel_LastName(object instance)
+        private object get_26_StudentViewModel_LastName(object instance)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             return that.LastName;
         }
-        private void set_21_StudentViewModel_LastName(object instance, object Value)
+        private void set_26_StudentViewModel_LastName(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             that.LastName = (global::System.String)Value;
         }
-        private object get_22_StudentViewModel_Email(object instance)
+        private object get_27_StudentViewModel_Email(object instance)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             return that.Email;
         }
-        private void set_22_StudentViewModel_Email(object instance, object Value)
+        private void set_27_StudentViewModel_Email(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             that.Email = (global::System.String)Value;
         }
-        private object get_23_StudentViewModel_PhoneNumber(object instance)
+        private object get_28_StudentViewModel_PhoneNumber(object instance)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             return that.PhoneNumber;
         }
-        private void set_23_StudentViewModel_PhoneNumber(object instance, object Value)
+        private void set_28_StudentViewModel_PhoneNumber(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             that.PhoneNumber = (global::System.String)Value;
         }
-        private object get_24_StudentViewModel_VoorkeursOpleidingen(object instance)
+        private object get_29_StudentViewModel_VoorkeursOpleidingen(object instance)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             return that.VoorkeursOpleidingen;
         }
-        private void set_24_StudentViewModel_VoorkeursOpleidingen(object instance, object Value)
+        private void set_29_StudentViewModel_VoorkeursOpleidingen(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             that.VoorkeursOpleidingen = (global::System.Collections.Generic.List<global::HoGentApp.models.Education>)Value;
         }
-        private object get_25_StudentViewModel_Students(object instance)
+        private object get_30_StudentViewModel_Students(object instance)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             return that.Students;
         }
-        private void set_25_StudentViewModel_Students(object instance, object Value)
+        private void set_30_StudentViewModel_Students(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             that.Students = (global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Student>)Value;
         }
-        private object get_26_Student_StudentId(object instance)
+        private object get_31_Student_StudentId(object instance)
         {
             var that = (global::HoGentApp.models.Student)instance;
             return that.StudentId;
         }
-        private void set_26_Student_StudentId(object instance, object Value)
+        private void set_31_Student_StudentId(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Student)instance;
             that.StudentId = (global::System.Int32)Value;
         }
-        private object get_27_Student_FirstName(object instance)
+        private object get_32_Student_FirstName(object instance)
         {
             var that = (global::HoGentApp.models.Student)instance;
             return that.FirstName;
         }
-        private void set_27_Student_FirstName(object instance, object Value)
+        private void set_32_Student_FirstName(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Student)instance;
             that.FirstName = (global::System.String)Value;
         }
-        private object get_28_Student_LastName(object instance)
+        private object get_33_Student_LastName(object instance)
         {
             var that = (global::HoGentApp.models.Student)instance;
             return that.LastName;
         }
-        private void set_28_Student_LastName(object instance, object Value)
+        private void set_33_Student_LastName(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Student)instance;
             that.LastName = (global::System.String)Value;
         }
-        private object get_29_Student_Email(object instance)
+        private object get_34_Student_Email(object instance)
         {
             var that = (global::HoGentApp.models.Student)instance;
             return that.Email;
         }
-        private void set_29_Student_Email(object instance, object Value)
+        private void set_34_Student_Email(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Student)instance;
             that.Email = (global::System.String)Value;
         }
-        private object get_30_Student_PhoneNumber(object instance)
+        private object get_35_Student_PhoneNumber(object instance)
         {
             var that = (global::HoGentApp.models.Student)instance;
             return that.PhoneNumber;
         }
-        private void set_30_Student_PhoneNumber(object instance, object Value)
+        private void set_35_Student_PhoneNumber(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Student)instance;
             that.PhoneNumber = (global::System.String)Value;
         }
-        private object get_31_Student_VoorkeursOpleidingen(object instance)
+        private object get_36_Student_VoorkeursOpleidingen(object instance)
         {
             var that = (global::HoGentApp.models.Student)instance;
             return that.VoorkeursOpleidingen;
         }
-        private void set_31_Student_VoorkeursOpleidingen(object instance, object Value)
+        private void set_36_Student_VoorkeursOpleidingen(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Student)instance;
             that.VoorkeursOpleidingen = (global::System.Collections.Generic.List<global::HoGentApp.models.Education>)Value;
         }
-        private object get_32_Student_Adres(object instance)
+        private object get_37_Student_Adres(object instance)
         {
             var that = (global::HoGentApp.models.Student)instance;
             return that.Adres;
         }
-        private void set_32_Student_Adres(object instance, object Value)
+        private void set_37_Student_Adres(object instance, object Value)
         {
             var that = (global::HoGentApp.models.Student)instance;
             that.Adres = (global::System.String)Value;
         }
-        private object get_33_StudentViewModel_Opleidingen(object instance)
+        private object get_38_StudentViewModel_Opleidingen(object instance)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             return that.Opleidingen;
         }
-        private void set_33_StudentViewModel_Opleidingen(object instance, object Value)
+        private void set_38_StudentViewModel_Opleidingen(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             that.Opleidingen = (global::System.Collections.ObjectModel.ObservableCollection<global::HoGentApp.models.Education>)Value;
         }
-        private object get_34_StudentViewModel_SaveStudentCommand(object instance)
+        private object get_39_StudentViewModel_SaveStudentCommand(object instance)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             return that.SaveStudentCommand;
         }
-        private void set_34_StudentViewModel_SaveStudentCommand(object instance, object Value)
+        private void set_39_StudentViewModel_SaveStudentCommand(object instance, object Value)
         {
             var that = (global::HoGentApp.ViewModels.StudentViewModel)instance;
             that.SaveStudentCommand = (global::HoGentApp.Utility.RelayCommand)Value;
@@ -1108,215 +1223,245 @@ namespace HoGentApp.HoGentApp_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "HoGentApp.ViewModels.CampusViewModel.Campussen":
+                userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.CampusViewModel");
+                xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Campussen", "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Campus>");
+                xamlMember.Getter = get_0_CampusViewModel_Campussen;
+                xamlMember.Setter = set_0_CampusViewModel_Campussen;
+                break;
+            case "HoGentApp.models.Campus.CampusId":
+                userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Campus");
+                xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "CampusId", "Int32");
+                xamlMember.Getter = get_1_Campus_CampusId;
+                xamlMember.Setter = set_1_Campus_CampusId;
+                break;
+            case "HoGentApp.models.Campus.Name":
+                userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Campus");
+                xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_2_Campus_Name;
+                xamlMember.Setter = set_2_Campus_Name;
+                break;
+            case "HoGentApp.models.Campus.Adres":
+                userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Campus");
+                xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Adres", "HoGentApp.models.Adres");
+                xamlMember.Getter = get_3_Campus_Adres;
+                xamlMember.Setter = set_3_Campus_Adres;
+                break;
+            case "HoGentApp.models.Campus.IsChecked":
+                userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Campus");
+                xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "IsChecked", "Boolean");
+                xamlMember.Getter = get_4_Campus_IsChecked;
+                xamlMember.Setter = set_4_Campus_IsChecked;
+                break;
             case "HoGentApp.ViewModels.NieuwsFeedsViewModel.NieuwsFeeds":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.NieuwsFeedsViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "NieuwsFeeds", "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Article>");
-                xamlMember.Getter = get_0_NieuwsFeedsViewModel_NieuwsFeeds;
-                xamlMember.Setter = set_0_NieuwsFeedsViewModel_NieuwsFeeds;
+                xamlMember.Getter = get_5_NieuwsFeedsViewModel_NieuwsFeeds;
+                xamlMember.Setter = set_5_NieuwsFeedsViewModel_NieuwsFeeds;
                 break;
             case "HoGentApp.models.Article.ArticleId":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Article");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "ArticleId", "Int32");
-                xamlMember.Getter = get_1_Article_ArticleId;
-                xamlMember.Setter = set_1_Article_ArticleId;
+                xamlMember.Getter = get_6_Article_ArticleId;
+                xamlMember.Setter = set_6_Article_ArticleId;
                 break;
             case "HoGentApp.models.Article.Title":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Article");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_2_Article_Title;
-                xamlMember.Setter = set_2_Article_Title;
+                xamlMember.Getter = get_7_Article_Title;
+                xamlMember.Setter = set_7_Article_Title;
                 break;
             case "HoGentApp.models.Article.Description":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Article");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_3_Article_Description;
-                xamlMember.Setter = set_3_Article_Description;
+                xamlMember.Getter = get_8_Article_Description;
+                xamlMember.Setter = set_8_Article_Description;
                 break;
             case "HoGentApp.ViewModels.EducationViewModel.Educations":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.EducationViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Educations", "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Education>");
-                xamlMember.Getter = get_4_EducationViewModel_Educations;
-                xamlMember.Setter = set_4_EducationViewModel_Educations;
+                xamlMember.Getter = get_9_EducationViewModel_Educations;
+                xamlMember.Setter = set_9_EducationViewModel_Educations;
                 break;
             case "HoGentApp.models.Education.EducationId":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Education");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "EducationId", "String");
-                xamlMember.Getter = get_5_Education_EducationId;
-                xamlMember.Setter = set_5_Education_EducationId;
+                xamlMember.Getter = get_10_Education_EducationId;
+                xamlMember.Setter = set_10_Education_EducationId;
                 break;
             case "HoGentApp.models.Education.Name":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Education");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_6_Education_Name;
-                xamlMember.Setter = set_6_Education_Name;
+                xamlMember.Getter = get_11_Education_Name;
+                xamlMember.Setter = set_11_Education_Name;
                 break;
             case "HoGentApp.models.Education.Description":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Education");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_7_Education_Description;
-                xamlMember.Setter = set_7_Education_Description;
+                xamlMember.Getter = get_12_Education_Description;
+                xamlMember.Setter = set_12_Education_Description;
                 break;
             case "HoGentApp.models.Education.DescriptionShort":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Education");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "DescriptionShort", "String");
-                xamlMember.Getter = get_8_Education_DescriptionShort;
-                xamlMember.Setter = set_8_Education_DescriptionShort;
+                xamlMember.Getter = get_13_Education_DescriptionShort;
+                xamlMember.Setter = set_13_Education_DescriptionShort;
                 break;
             case "HoGentApp.models.Education.IsChecked":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Education");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "IsChecked", "Boolean");
-                xamlMember.Getter = get_9_Education_IsChecked;
-                xamlMember.Setter = set_9_Education_IsChecked;
+                xamlMember.Getter = get_14_Education_IsChecked;
+                xamlMember.Setter = set_14_Education_IsChecked;
                 break;
             case "HoGentApp.models.Education.GetImageSource":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Education");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "GetImageSource", "String");
-                xamlMember.Getter = get_10_Education_GetImageSource;
+                xamlMember.Getter = get_15_Education_GetImageSource;
                 xamlMember.SetIsReadOnly();
                 break;
             case "HoGentApp.Views.OpleidingPaginas.EducationDetail.EducationName":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.Views.OpleidingPaginas.EducationDetail");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "EducationName", "String");
-                xamlMember.Getter = get_11_EducationDetail_EducationName;
-                xamlMember.Setter = set_11_EducationDetail_EducationName;
+                xamlMember.Getter = get_16_EducationDetail_EducationName;
+                xamlMember.Setter = set_16_EducationDetail_EducationName;
                 break;
             case "HoGentApp.Views.OpleidingPaginas.EducationDetail.Description":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.Views.OpleidingPaginas.EducationDetail");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_12_EducationDetail_Description;
-                xamlMember.Setter = set_12_EducationDetail_Description;
+                xamlMember.Getter = get_17_EducationDetail_Description;
+                xamlMember.Setter = set_17_EducationDetail_Description;
                 break;
             case "HoGentApp.Views.OpleidingPaginas.EducationDetail.ImageSource":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.Views.OpleidingPaginas.EducationDetail");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "ImageSource", "String");
-                xamlMember.Getter = get_13_EducationDetail_ImageSource;
-                xamlMember.Setter = set_13_EducationDetail_ImageSource;
+                xamlMember.Getter = get_18_EducationDetail_ImageSource;
+                xamlMember.Setter = set_18_EducationDetail_ImageSource;
                 break;
             case "HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel.ToekomstigeActiviteiten":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.ToekomstigeActiviteitenViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "ToekomstigeActiviteiten", "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Gebeurtenis>");
-                xamlMember.Getter = get_14_ToekomstigeActiviteitenViewModel_ToekomstigeActiviteiten;
-                xamlMember.Setter = set_14_ToekomstigeActiviteitenViewModel_ToekomstigeActiviteiten;
+                xamlMember.Getter = get_19_ToekomstigeActiviteitenViewModel_ToekomstigeActiviteiten;
+                xamlMember.Setter = set_19_ToekomstigeActiviteitenViewModel_ToekomstigeActiviteiten;
                 break;
             case "HoGentApp.models.Gebeurtenis.GebeurtenisId":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Gebeurtenis");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "GebeurtenisId", "Int32");
-                xamlMember.Getter = get_15_Gebeurtenis_GebeurtenisId;
-                xamlMember.Setter = set_15_Gebeurtenis_GebeurtenisId;
+                xamlMember.Getter = get_20_Gebeurtenis_GebeurtenisId;
+                xamlMember.Setter = set_20_Gebeurtenis_GebeurtenisId;
                 break;
             case "HoGentApp.models.Gebeurtenis.Title":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Gebeurtenis");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_16_Gebeurtenis_Title;
-                xamlMember.Setter = set_16_Gebeurtenis_Title;
+                xamlMember.Getter = get_21_Gebeurtenis_Title;
+                xamlMember.Setter = set_21_Gebeurtenis_Title;
                 break;
             case "HoGentApp.models.Gebeurtenis.Description":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Gebeurtenis");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_17_Gebeurtenis_Description;
-                xamlMember.Setter = set_17_Gebeurtenis_Description;
+                xamlMember.Getter = get_22_Gebeurtenis_Description;
+                xamlMember.Setter = set_22_Gebeurtenis_Description;
                 break;
             case "HoGentApp.models.Gebeurtenis.Date":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Gebeurtenis");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Date", "System.DateTime");
-                xamlMember.Getter = get_18_Gebeurtenis_Date;
-                xamlMember.Setter = set_18_Gebeurtenis_Date;
+                xamlMember.Getter = get_23_Gebeurtenis_Date;
+                xamlMember.Setter = set_23_Gebeurtenis_Date;
                 break;
             case "HoGentApp.models.Gebeurtenis.Campus":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Gebeurtenis");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Campus", "HoGentApp.models.Campus");
-                xamlMember.Getter = get_19_Gebeurtenis_Campus;
-                xamlMember.Setter = set_19_Gebeurtenis_Campus;
+                xamlMember.Getter = get_24_Gebeurtenis_Campus;
+                xamlMember.Setter = set_24_Gebeurtenis_Campus;
                 break;
             case "HoGentApp.ViewModels.StudentViewModel.FirstName":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.StudentViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "FirstName", "String");
-                xamlMember.Getter = get_20_StudentViewModel_FirstName;
-                xamlMember.Setter = set_20_StudentViewModel_FirstName;
+                xamlMember.Getter = get_25_StudentViewModel_FirstName;
+                xamlMember.Setter = set_25_StudentViewModel_FirstName;
                 break;
             case "HoGentApp.ViewModels.StudentViewModel.LastName":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.StudentViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "LastName", "String");
-                xamlMember.Getter = get_21_StudentViewModel_LastName;
-                xamlMember.Setter = set_21_StudentViewModel_LastName;
+                xamlMember.Getter = get_26_StudentViewModel_LastName;
+                xamlMember.Setter = set_26_StudentViewModel_LastName;
                 break;
             case "HoGentApp.ViewModels.StudentViewModel.Email":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.StudentViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Email", "String");
-                xamlMember.Getter = get_22_StudentViewModel_Email;
-                xamlMember.Setter = set_22_StudentViewModel_Email;
+                xamlMember.Getter = get_27_StudentViewModel_Email;
+                xamlMember.Setter = set_27_StudentViewModel_Email;
                 break;
             case "HoGentApp.ViewModels.StudentViewModel.PhoneNumber":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.StudentViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "PhoneNumber", "String");
-                xamlMember.Getter = get_23_StudentViewModel_PhoneNumber;
-                xamlMember.Setter = set_23_StudentViewModel_PhoneNumber;
+                xamlMember.Getter = get_28_StudentViewModel_PhoneNumber;
+                xamlMember.Setter = set_28_StudentViewModel_PhoneNumber;
                 break;
             case "HoGentApp.ViewModels.StudentViewModel.VoorkeursOpleidingen":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.StudentViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "VoorkeursOpleidingen", "System.Collections.Generic.List`1<HoGentApp.models.Education>");
-                xamlMember.Getter = get_24_StudentViewModel_VoorkeursOpleidingen;
-                xamlMember.Setter = set_24_StudentViewModel_VoorkeursOpleidingen;
+                xamlMember.Getter = get_29_StudentViewModel_VoorkeursOpleidingen;
+                xamlMember.Setter = set_29_StudentViewModel_VoorkeursOpleidingen;
                 break;
             case "HoGentApp.ViewModels.StudentViewModel.Students":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.StudentViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Students", "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Student>");
-                xamlMember.Getter = get_25_StudentViewModel_Students;
-                xamlMember.Setter = set_25_StudentViewModel_Students;
+                xamlMember.Getter = get_30_StudentViewModel_Students;
+                xamlMember.Setter = set_30_StudentViewModel_Students;
                 break;
             case "HoGentApp.models.Student.StudentId":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Student");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "StudentId", "Int32");
-                xamlMember.Getter = get_26_Student_StudentId;
-                xamlMember.Setter = set_26_Student_StudentId;
+                xamlMember.Getter = get_31_Student_StudentId;
+                xamlMember.Setter = set_31_Student_StudentId;
                 break;
             case "HoGentApp.models.Student.FirstName":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Student");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "FirstName", "String");
-                xamlMember.Getter = get_27_Student_FirstName;
-                xamlMember.Setter = set_27_Student_FirstName;
+                xamlMember.Getter = get_32_Student_FirstName;
+                xamlMember.Setter = set_32_Student_FirstName;
                 break;
             case "HoGentApp.models.Student.LastName":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Student");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "LastName", "String");
-                xamlMember.Getter = get_28_Student_LastName;
-                xamlMember.Setter = set_28_Student_LastName;
+                xamlMember.Getter = get_33_Student_LastName;
+                xamlMember.Setter = set_33_Student_LastName;
                 break;
             case "HoGentApp.models.Student.Email":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Student");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Email", "String");
-                xamlMember.Getter = get_29_Student_Email;
-                xamlMember.Setter = set_29_Student_Email;
+                xamlMember.Getter = get_34_Student_Email;
+                xamlMember.Setter = set_34_Student_Email;
                 break;
             case "HoGentApp.models.Student.PhoneNumber":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Student");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "PhoneNumber", "String");
-                xamlMember.Getter = get_30_Student_PhoneNumber;
-                xamlMember.Setter = set_30_Student_PhoneNumber;
+                xamlMember.Getter = get_35_Student_PhoneNumber;
+                xamlMember.Setter = set_35_Student_PhoneNumber;
                 break;
             case "HoGentApp.models.Student.VoorkeursOpleidingen":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Student");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "VoorkeursOpleidingen", "System.Collections.Generic.List`1<HoGentApp.models.Education>");
-                xamlMember.Getter = get_31_Student_VoorkeursOpleidingen;
-                xamlMember.Setter = set_31_Student_VoorkeursOpleidingen;
+                xamlMember.Getter = get_36_Student_VoorkeursOpleidingen;
+                xamlMember.Setter = set_36_Student_VoorkeursOpleidingen;
                 break;
             case "HoGentApp.models.Student.Adres":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.models.Student");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Adres", "String");
-                xamlMember.Getter = get_32_Student_Adres;
-                xamlMember.Setter = set_32_Student_Adres;
+                xamlMember.Getter = get_37_Student_Adres;
+                xamlMember.Setter = set_37_Student_Adres;
                 break;
             case "HoGentApp.ViewModels.StudentViewModel.Opleidingen":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.StudentViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "Opleidingen", "System.Collections.ObjectModel.ObservableCollection`1<HoGentApp.models.Education>");
-                xamlMember.Getter = get_33_StudentViewModel_Opleidingen;
-                xamlMember.Setter = set_33_StudentViewModel_Opleidingen;
+                xamlMember.Getter = get_38_StudentViewModel_Opleidingen;
+                xamlMember.Setter = set_38_StudentViewModel_Opleidingen;
                 break;
             case "HoGentApp.ViewModels.StudentViewModel.SaveStudentCommand":
                 userType = (global::HoGentApp.HoGentApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("HoGentApp.ViewModels.StudentViewModel");
                 xamlMember = new global::HoGentApp.HoGentApp_XamlTypeInfo.XamlMember(this, "SaveStudentCommand", "HoGentApp.Utility.RelayCommand");
-                xamlMember.Getter = get_34_StudentViewModel_SaveStudentCommand;
-                xamlMember.Setter = set_34_StudentViewModel_SaveStudentCommand;
+                xamlMember.Getter = get_39_StudentViewModel_SaveStudentCommand;
+                xamlMember.Setter = set_39_StudentViewModel_SaveStudentCommand;
                 break;
             }
             return xamlMember;

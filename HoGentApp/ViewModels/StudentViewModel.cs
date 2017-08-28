@@ -72,12 +72,14 @@ namespace HoGentApp.ViewModels
             }
 
             //Alle ingevulde velden doorgeven aan het model en een nieuw Student object maken
-            Student s = new Student() { FirstName = FirstName, LastName = LastName, PhoneNumber = PhoneNumber, Email = Email, VoorkeursOpleidingen=VoorkeursOpleidingen };
+            Student s = new Student() { FirstName = FirstName, LastName = LastName, PhoneNumber = PhoneNumber, Email = Email, VoorkeursOpleidingen = VoorkeursOpleidingen };
 
             //TEST
             this.Students.Add(s);
 
             //TODO: BACKEND CALLEN EN STUDENT OBJECT MEEGEVEN
+
+
 
             dataSource.saveStudent(s);
 

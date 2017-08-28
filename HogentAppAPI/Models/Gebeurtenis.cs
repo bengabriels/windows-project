@@ -15,7 +15,7 @@ namespace HogentAppAPI.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime Date { get; set; }
-        public int CampusId { get; set; }
+        public int? CampusId { get; set; }
 
         [ForeignKey("CampusId")]
         public virtual Campus Campus { get; set; }
