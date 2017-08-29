@@ -55,7 +55,7 @@ namespace HoGentApp.Views.Admin.Views
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            if(Admintb.Text =="admin" && Wachtwoordtb.Text == "ww")
+            if(Admintb.Text =="admin" && Wachtwoordtb.Password == "ww")
             {
                 AdminList.Visibility = Visibility.Visible;
                 LoginForm.Visibility = Visibility.Collapsed;

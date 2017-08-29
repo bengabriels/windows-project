@@ -12,7 +12,7 @@
             <TextBlock Text="Admin e-mail"/>
             <TextBox x:Name="Admintb"/>
             <TextBlock Text="Wachtwoord"/>
-            <TextBox x:Name="Wachtwoordtb"/>
+            <PasswordBox x:Name="Wachtwoordtb"/>
             <Button Tapped="Button_Tapped" HorizontalAlignment="Center" Margin="0 20 0 0">Log in</Button>
         </StackPanel>
         <StackPanel x:Name="AdminList">
