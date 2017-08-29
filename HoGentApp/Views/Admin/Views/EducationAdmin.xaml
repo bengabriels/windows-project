@@ -7,22 +7,22 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Center">
         <StackPanel x:Name="sp">
-        <TextBlock>Studierichting toevoegen</TextBlock>
-        <StackPanel Orientation="Horizontal">
+        <TextBlock HorizontalAlignment="Center" FontSize="20" FontWeight="Bold">Studierichting toevoegen</TextBlock>
+            <StackPanel Orientation="Vertical" Margin="10 10 10 10">
             <TextBlock>Naam</TextBlock>
                 <TextBox Text="{Binding Name, Mode=TwoWay}"></TextBox>
         </StackPanel>
-        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="vertical" Margin="10 10 10 10">
             <TextBlock>Korte beschrijving</TextBlock>
                 <TextBox Text="{Binding DescriptionShort, Mode=TwoWay}"></TextBox>
         </StackPanel>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Margin="10 10 10 20">
                 <TextBlock>Beschrijving</TextBlock>
-                <TextBox Text="{Binding Description, Mode=TwoWay}" TextWrapping="Wrap" AcceptsReturn="True" ></TextBox>
+                <TextBox Text="{Binding Description, Mode=TwoWay}" TextWrapping="Wrap" AcceptsReturn="True" MinHeight="200"></TextBox>
             </StackPanel>
-            <Button  Content="Toevoegen" Click="AddCampusClick"></Button>
+            <Button  Content="Toevoegen" Click="AddCampusClick" HorizontalAlignment="Center"></Button>
         </StackPanel>
         <ListView x:Name="lv">
             <ListView.ItemTemplate>

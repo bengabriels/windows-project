@@ -7,12 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="15 0 15 0">
-        <StackPanel Margin="0 200">
-            <TextBlock Text="Admin"/>
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="15 0 15 0" VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Admin e-mail"/>
             <TextBox x:Name="Admintb"/>
             <TextBlock Text="Wachtwoord"/>
-            <PasswordBox x:Name="Wachtwoordtb"/>
+            <TextBox x:Name="Wachtwoordtb"/>
             <Button Tapped="Button_Tapped" HorizontalAlignment="Center" Margin="0 20 0 0">Log in</Button>
         </StackPanel>
         <StackPanel x:Name="AdminList">
