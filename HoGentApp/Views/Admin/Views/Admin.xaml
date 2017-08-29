@@ -16,21 +16,21 @@
             <Button Tapped="Button_Tapped" HorizontalAlignment="Center" Margin="0 20 0 0">Log in</Button>
         </StackPanel>
         <StackPanel x:Name="AdminList">
-        <StackPanel Tapped="Student_Tapped">
-         <TextBlock Name="Student" >Studenten</TextBlock>   
-        </StackPanel>
-        <StackPanel  Tapped="Education_Tapped">
-            <TextBlock Name="Education">Opleidingen</TextBlock>
-        </StackPanel>
-        <StackPanel Tapped="Campus_Tapped">
-            <TextBlock Name="Campus" >Campussen</TextBlock>
-        </StackPanel>
-        <StackPanel Tapped="Gebeurtenis_Tapped">
-            <TextBlock Name="Gebeurtenis" >Gebeurtenissen</TextBlock>
-        </StackPanel>
-        <StackPanel Tapped="Article_Tapped">
-            <TextBlock Name="Article" >artikels</TextBlock>
-        </StackPanel>
+            <StackPanel Tapped="Student_Tapped" Background="DarkGray" Margin="10 5 10 5" Height="50" CornerRadius="5" Opacity="0.7">
+                <TextBlock Name="Student" Padding="0 15 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="121,0">Studenten</TextBlock>
+            </StackPanel>
+            <StackPanel  Tapped="Education_Tapped" Background="DarkGray" Margin="10 5 10 5" Height="50" CornerRadius="5" Opacity="0.7">
+                <TextBlock Name="Education" Padding="0 15 0 0" HorizontalAlignment="Center">Opleidingen</TextBlock>
+            </StackPanel>
+            <StackPanel Tapped="Campus_Tapped" Background="DarkGray" Margin="10 5 10 5" Height="50" CornerRadius="5" Opacity="0.7">
+                <TextBlock Name="Campus" Padding="0 15 0 0" HorizontalAlignment="Center">Campussen</TextBlock>
+            </StackPanel>
+            <StackPanel Tapped="Gebeurtenis_Tapped" Background="DarkGray" Margin="10 5 10 5" Height="50" CornerRadius="5" Opacity="0.7">
+                <TextBlock Name="Gebeurtenis" Padding="0 15 0 0" HorizontalAlignment="Center">Gebeurtenissen</TextBlock>
+            </StackPanel>
+            <StackPanel Tapped="Article_Tapped" Background="DarkGray" Margin="10 5 10 5" Height="50" CornerRadius="5" Opacity="0.7">
+                <TextBlock Name="Article" Padding="0 15 0 0" HorizontalAlignment="Center">artikels</TextBlock>
+            </StackPanel>
         </StackPanel>
     </StackPanel>
 </Page>
