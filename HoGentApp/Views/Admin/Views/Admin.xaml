@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="15 0 15 0" VerticalAlignment="Center">
-        <StackPanel VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Center" x:Name="LoginForm">
             <TextBlock Text="Admin e-mail"/>
             <TextBox x:Name="Admintb"/>
             <TextBlock Text="Wachtwoord"/>

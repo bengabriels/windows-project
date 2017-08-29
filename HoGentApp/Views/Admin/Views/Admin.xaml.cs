@@ -58,7 +58,7 @@ namespace HoGentApp.Views.Admin.Views
             if(Admintb.Text =="admin" && Wachtwoordtb.Text == "ww")
             {
                 AdminList.Visibility = Visibility.Visible;
-
+                LoginForm.Visibility = Visibility.Collapsed;
             }
         }
     }

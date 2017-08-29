@@ -51,7 +51,7 @@
         
         
         <!--TESTEN OF STUDENT WORDT TOEGEVOEGD-->
-        <ListView ItemsSource="{Binding Students}">
+        <!--<ListView ItemsSource="{Binding Students}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -59,7 +59,7 @@
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
                     
     </StackPanel>
 
