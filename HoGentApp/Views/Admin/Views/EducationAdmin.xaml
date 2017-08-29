@@ -24,17 +24,26 @@
             </StackPanel>
             <Button  Content="Toevoegen" Click="AddCampusClick" HorizontalAlignment="Center"></Button>
         </StackPanel>
-        <ListView x:Name="lv">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{ Binding Name}"/>
-                        <TextBlock Text="{ Binding Description}"/>
-                        <TextBlock Text="{ Binding DescriptionShort}"/>
-                        <Button Content="Verwijder" Click="RemoveClick"></Button>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        
+        <TextBlock HorizontalAlignment="Center" Margin="0 20 0 15" FontWeight="Bold">Beheer Opleidingen</TextBlock>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch">
+            <ListView x:Name="lv">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{ Binding Name}"/>
+                            <TextBlock Text="{ Binding Description}"/>
+                            <TextBlock Text="{ Binding DescriptionShort}"/>
+                            <Button Content="Verwijder" Click="RemoveClick"></Button>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
     </StackPanel>
 </Page>
