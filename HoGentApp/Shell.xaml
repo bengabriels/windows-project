@@ -81,10 +81,10 @@
                 <RadioButton x:Name="HomeRadioButton" Click="HomeRadioButton_Click" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE80F;" Foreground="DarkGray" Content="Home Pagina" GroupName="Navigation"/>
                 <RadioButton x:Name="VoorstellingRadioButton" Click="VoorstellingRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE8FA;" Foreground="DarkGray" Content="Vertel ons wie je bent" GroupName="Navigation"/>
                 <RadioButton x:Name="OpleidingenRadioButton" Click="OpleidingenRadioButton_Click" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE8F1;" Foreground="DarkGray" Content="Onze opleidingen" GroupName="Navigation"/>
-                <RadioButton x:Name="CampussenRadioButton" Click="CampussenRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE72D;" Foreground="DarkGray" Content="Campussen" GroupName="Navigation"/>
+                <RadioButton x:Name="CampussenRadioButton" Click="CampussenRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE909;" Foreground="DarkGray" Content="Campussen" GroupName="Navigation"/>
                 <RadioButton x:Name="ToekomstigeActiviteitenRadioButton" Click="ToekomstigeActiviteitenRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE8BF;" Foreground="DarkGray" Content="Toekomstige Activiteiten" GroupName="Navigation"/>
                 <RadioButton x:Name="NieuwsFeedsRadioButton" Click="NieuwsFeedsRadioButton_OnClick" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE8BD;" Foreground="DarkGray" Content="Nieuws Feeds" GroupName="Navigation"/>
-                <RadioButton x:Name="AdminRadioButton" Click="AdminRadioButton_Click" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE8BD;" Foreground="DarkGray" Content="Admin" GroupName="Navigation"/>
+                <RadioButton x:Name="AdminRadioButton" Click="AdminRadioButton_Click" Style="{StaticResource NavRadioButtonStyle}" Tag="&#xE7EF;" Foreground="DarkGray" Content="Admin" GroupName="Navigation"/>
             </StackPanel>
         </SplitView.Pane>
     </SplitView>

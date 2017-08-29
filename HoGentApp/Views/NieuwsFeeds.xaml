@@ -19,7 +19,7 @@
     -->
     <ScrollViewer>
         <StackPanel Grid.Row="1"  HorizontalAlignment="Center" DataContext="{Binding Source={StaticResource viewModel}}">
-            <TextBlock HorizontalAlignment="Center" Text="HoGent Nieuws Feeds" FontSize="24" Margin="0 0 0 20" FontWeight="bold"></TextBlock>
+            <TextBlock HorizontalAlignment="Center" Text="HoGent Nieuws Feeds" FontSize="20" Margin="0 10 0 20" FontWeight="bold"></TextBlock>
             <!--De nieuwsfeeds weergeven-->
             <ListView ItemsSource="{Binding NieuwsFeeds}">
                 <ListView.ItemContainerStyle>
@@ -30,6 +30,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="0 0 0 15">
+                            <Border BorderThickness="0,1,0,0" BorderBrush="DarkGray"/>
                             <TextBlock FontWeight="Bold" Margin="10 15 10 5" Text="{Binding Title}"></TextBlock>
                             <RichTextBlock TextAlignment="Justify">
                                 <Paragraph Margin="10 0 10 0">

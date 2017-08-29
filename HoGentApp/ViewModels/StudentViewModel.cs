@@ -101,5 +101,8 @@ namespace HoGentApp.ViewModels
 
             Debug.WriteLine("Student toegevoegd met command");
         }
+
+        
+
       }
 }

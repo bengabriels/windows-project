@@ -54,7 +54,11 @@ namespace HoGentApp.Views.Admin.Views
             var result = await client.PostAsync("http://localhost:1227/api/campus", new StringContent(jsonString,
                             System.Text.Encoding.UTF8, "application/json"));
             var status = result.StatusCode;
+
+            //Clear fields
+            
         }
+       
         private async void RemoveClick(object sender, RoutedEventArgs e)
         {
             Button b = (Button)sender;

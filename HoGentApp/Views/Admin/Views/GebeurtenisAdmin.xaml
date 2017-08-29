@@ -14,25 +14,25 @@
     x:Key="DateTimeToDateTimeOffsetConverter"/>
     </Page.Resources>
 
-    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Center">
         <StackPanel x:Name="sp">
-            <TextBlock>Gebeurtenis toevoegen</TextBlock>
-            <StackPanel Orientation="Horizontal">
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold" FontSize="20">Gebeurtenis toevoegen</TextBlock>
+            <StackPanel Orientation="Vertical" Margin="10 10 10 10">
                 <TextBlock>Titel</TextBlock>
                 <TextBox Text="{Binding Title, Mode=TwoWay}"></TextBox>
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Margin="10 10 10 10">
                 <TextBlock>Beschrijving</TextBlock>
                 <TextBox Text="{Binding Description, Mode=TwoWay}"></TextBox>
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Margin="10 10 10 10">
                 <TextBlock>Datum</TextBlock>
                 <DatePicker Date="{Binding Date, Converter={StaticResource DateTimeToDateTimeOffsetConverter}, Mode=TwoWay}"/>
                 <!--   Date="{Binding SomeDateTime, Converter={StaticResource DateTimeToDateTimeOffsetConverter}, Mode=TwoWay}" -->
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Margin="10 10 10 20">
                 <TextBlock>Campus</TextBlock>
-                <ListBox Name="campusList" Margin="0 0 0 15" >
+                <ListBox Name="campusList" HorizontalAlignment="Center">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <CheckBox Content="{Binding Name}" IsChecked="{Binding Path=IsChecked, Mode=TwoWay}"/>
@@ -40,7 +40,7 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
-            <Button  Content="Toevoegen" Click="AddEventClick"></Button>
+            <Button  Content="Toevoegen" Click="AddEventClick" HorizontalAlignment="Center"></Button>
         </StackPanel>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <ListView x:Name="lv">
