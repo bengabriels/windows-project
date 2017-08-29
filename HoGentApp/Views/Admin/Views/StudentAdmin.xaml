@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <StackPanel>
-        <TextBlock>Studenten</TextBlock>
+        <TextBlock HorizontalAlignment="Center" FontWeight="Bold" FontSize="20" Margin="0 10 0 20">Studenten</TextBlock>
         <ScrollViewer>
             <ListView x:Name="lv">
                 <ListView.ItemTemplate>
