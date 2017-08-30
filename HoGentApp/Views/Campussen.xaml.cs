@@ -43,12 +43,12 @@ namespace HoGentApp.Views
         private void ListView_ItemClick(object sender, ItemClickEventArgs e)
         {
             //Cast het aangeklikte item uit de lijst naar een Campus object
-            //var aangekliktItem = (Education)e.ClickedItem;
-            /*
+            var aangekliktItem = (Campus)e.ClickedItem;
+            
             //Kijk of het item de naam Schoonmeersen heeft, zoja navigeer naar pagina Schoonmeersen
             if (aangekliktItem.Name == "Schoonmeersen") {
                 this.Frame.Navigate(typeof(Views.CampusPaginas.Schoonmeersen));
-            }*/
+            }
         }
     }
 }
