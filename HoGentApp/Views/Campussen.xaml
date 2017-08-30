@@ -34,15 +34,16 @@
                 </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Border BorderThickness="0,1,0,0" BorderBrush="DarkGray"/>
                             <Image Width="150" Height="150" Source="https://maps.googleapis.com/maps/api/staticmap?center=Voskenslaan,%20Gent&amp;zoom=15&amp;size=200x200&amp;key=AIzaSyDVvyquoZ0GV2AFfcMAatR8hNbUlPojfsA" />
-                            <StackPanel>
-                                <TextBlock FontSize="19" Margin="10 15 10 5" Text="{Binding Name}"></TextBlock>
-                                <TextBlock FontSize="19" Margin="10 15 10 5">
+                            <StackPanel HorizontalAlignment="Center">
+                                <TextBlock FontSize="19" Margin="10 0 10 2" Text="{Binding Name}"></TextBlock>
+                                <TextBlock FontSize="19" Margin="10 0 10 2">
                                     <Run Text="{Binding Adres.Street}"/>
                                     <Run Text="{Binding Adres.StreetNumber}"/>
                                 </TextBlock>
-                                <TextBlock FontSize="19" Margin="10 15 10 5" Text="{Binding Adres.City}"></TextBlock>
+                                <TextBlock FontSize="19" Margin="10 0 10 2" Text="{Binding Adres.City}"></TextBlock>
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>
