@@ -20,7 +20,7 @@ namespace HogentAppAPI.Models
 
         public IEnumerable<int?> EducationIds
         {
-            get { return VoorkeursOpleidingen.Select(a => a.EducationId); }
+            get { return VoorkeursOpleidingen?.Select(a => a.EducationId); }
         }
     }
 }
